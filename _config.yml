@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Zheyuan Zhang"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Zheyuan Zhang"
 description              : &description "personal description"
 url                      : https://JasonZhangzy1757.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -21,7 +21,7 @@ repository               : "JasonZhangzy1757/JasonZhangzy1757.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "me.jpeg"
   name             : "Zheyuan (Jason) Zhang"
   pronouns         : # example: "she/her"  
   bio              : "PhD student at University of Notre Dame"
