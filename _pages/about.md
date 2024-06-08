@@ -12,7 +12,7 @@ My name is Zheyuan (Jason) Zhang, a first-year Ph.D. student in the Department o
 
 Updates
 ======
-* [2024.05] One first-author is accepted by KDD'24. 
+* [2024.05] One first-author paper is accepted by KDD'24. 
 * [2024.04] One paper is accepted by IJCAI'24
   
 
