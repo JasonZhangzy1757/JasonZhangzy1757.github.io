@@ -23,6 +23,27 @@ Selected Publications
 ======
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
+- [KDD'25] MOPI-HFRS: A Multi-objective Personalized Health-aware Food Recommendation System with LLM-enhanced Interpretation. [[paper](https://openreview.net/pdf?id=yapWkJ0lrh)][[code](https://github.com/Anonymous-Be3fb6/MOPI-HFRS/tree/main)]
+
+  <b>Zheyuan Zhang</b>, Zehong Wang, Tianyi Ma, Varun Sameer Taneja, Sofia Nelson, Nhi Ha Lan Le, Keerthiram Murugesan, Mingxuan Ju, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
+
+- [KDD'24] Diet-ODIN: A Novel Framework for Opioid Misuse Detection with Interpretable Dietary Pattern. [[paper](https://dl.acm.org/doi/abs/10.1145/3637528.3671587)] [[code](https://github.com/JasonZhangzy1757/Diet-ODIN)]
+
+  <b>Zheyuan Zhang</b>\*, Zehong Wang\*, Shifu Hou, Evan Hall, Landon Bachman, Vincent Galassi, Jasmine White, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
+
+- [WSDM'25] SimMLP: Training MLPs on Graphs without Supervision [[paper](https://arxiv.org/abs/2402.08918)] [[code](https://github.com/Zehong-Wang/SimMLP)]
+
+  Zehong Wang, <b>Zheyuan Zhang</b>, Chuxu Zhang, Yanfang Ye.
+
+- [NeurIPS'24] GFT: Graph Foundation Model with Transferable Tree Vocabulary [[paper](https://arxiv.org/abs/2411.06070)] [[code](https://github.com/Zehong-Wang/GFT)]
+
+  Zehong Wang, <b>Zheyuan Zhang</b>, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
+
+- [IJCAI'24] Subgraph Pooling: Tackling Negative Transfer on Graphs. [[paper](https://arxiv.org/abs/2402.08907)]][[code](https://github.com/Zehong-Wang/Subgraph-Pooling)] [[poster](/files/ijcai24/sp/poster.pdf)]
+
+  Zehong Wang, <b>Zheyuan Zhang</b>, Chuxu Zhang, Yanfang Ye.
+
+(\* indicates equal contribution.)
 
 Contact
 ======
