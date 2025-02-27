@@ -12,7 +12,7 @@ My name is Zheyuan (Jason) Zhang, a second-year Ph.D. student in the Department 
 
 News
 ======
-* [2025.02] I will join Amazon as Applied Scientist Intern in 2025 Summer. Let's meet in Seattle!
+* [2025.02] I will join Amazon as Applied Scientist Intern this Summer. See you in Seattle!
 * [2025.01] One paper is accepted by NAACL 2025. See you in Albuquerque!
 * [2024.11] One first-author paper is accepted by KDD 2025. See you in Toronto!
 * [2024.10] One paper is accepted by WSDM 2025.
