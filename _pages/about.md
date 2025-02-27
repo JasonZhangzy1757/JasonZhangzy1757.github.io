@@ -7,21 +7,50 @@ redirect_from:
   - /Zheyuan (Jason) Zhang.html
 ---
 
-My name is Zheyuan (Jason) Zhang, a second-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame. I'm supervised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/) and [Prof. Chuxu Zhang](https://chuxuzhang.github.io/). Before joining Notre Dame, I received my B.S. degree at Wuhan University (WHU) in 2019 and M.S. degree at New York University (NYU) in 2020. After graduating from NYU, I joined [Coleridge Initiative](https://coleridgeinitiative.org/) as a research scientist from 2020 to 2023. My research focuses mainly on graph representation learning, retrieval agumented generation and recommendation system. I'm also interested to apply AI to solve real life problems, especially in fields of health & nutrition intelligence. You can find my CV [here](http://JasonZhangzy1757.github.io/files/CV_11202024.pdf).
+My name is Zheyuan (Jason) Zhang, a second-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame. My advisor is [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/), and I work closely with IBM Research and [Prof. Chuxu Zhang](https://chuxuzhang.github.io/). Before joining Notre Dame, I received my B.S. degree at Wuhan University (WHU) in 2019 and M.S. degree at New York University (NYU) in 2020. After graduating from NYU, I joined [Coleridge Initiative](https://coleridgeinitiative.org/) as research scientist from 2020 to 2023. My research focuses mainly on threefolds: Agentic Retrieval Augmented Generation, Graph Foundation Model, and Recommendation System. I'm also interested in applying AI to solve real life problems, especially in fields of health & nutrition intelligence. For more details, you can find my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf).
 
 
 News
 ======
-* [2024.11] One first-author paper is accepted by KDD 2025.
+* [2025.02] I will join Amazon as Applied Scientist Intern in 2025 Summer. Let's meet in Seattle!
+* [2025.01] One paper is accepted by NAACL 2025. See you in Albuquerque!
+* [2024.11] One first-author paper is accepted by KDD 2025. See you in Toronto!
 * [2024.10] One paper is accepted by WSDM 2025.
-* [2024.09] One paper is accepted by NeurIPS 2024. 
+* [2024.09] I will be giving a talk about our work, MOPI-HFRS, at IBM T.J. Watson Research Center. See you in Yorktown Heights!
+* [2024.09] One paper is accepted by NeurIPS 2024.
+* [2024.06] I start collaboration with IBM Research, working under the mentorship of [Keerthiram Murugesan](https://keerthi166.github.io/).
 * [2024.05] One first-author paper is accepted by KDD 2024. 
 * [2024.04] One paper is accepted by IJCAI 2024.
   
 
-Selected Publications
+Publications
 ======
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
+
+Preprint
+-----
+
+ - NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning [[paper](https://arxiv.org/abs/2501.18739)][[code](https://anonymous.4open.science/r/NGQA-5E7F/README.md)]
+
+    <b>Zheyuan Zhang*</b>, Yiyang Li*, Nhi Ha Lan Le*, Zehong Wang, Tianyi Ma, Vincent Galassi, Keerthiram Murugesan, Nuno Moniz, Werner Geyer, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye 
+
+    [Submited to ARR Dec (Avg. Score 3.83; Meta 4)]
+
+ - Neural Graph Pattern Machine [[paper](https://arxiv.org/abs/2501.18739)]
+
+    Zehong Wang, <b>Zheyuan Zhang</b>, Tianyi Ma, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
+
+    [Submited to ICML]
+
+ - Towards Graph Foundation Models: Learning Generalities Across Graphs via Task-trees [[paper](https://arxiv.org/abs/2412.16441)]
+
+    Zehong Wang, <b>Zheyuan Zhang</b>, Tianyi Ma, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
+
+    [Submited to ICML]
+
+
+Selected Publications
+-----
 
 - [KDD'25] MOPI-HFRS: A Multi-objective Personalized Health-aware Food Recommendation System with LLM-enhanced Interpretation. [[paper](https://openreview.net/pdf?id=yapWkJ0lrh)][[code](https://github.com/Anonymous-Be3fb6/MOPI-HFRS/tree/main)]
 
