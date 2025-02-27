@@ -32,7 +32,7 @@ Preprint
 
  - NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning [[paper](https://arxiv.org/abs/2501.18739)][[code](https://anonymous.4open.science/r/NGQA-5E7F/README.md)]
 
-    <b>Zheyuan Zhang*</b>, Yiyang Li*, Nhi Ha Lan Le*, Zehong Wang, Tianyi Ma, Vincent Galassi, Keerthiram Murugesan, Nuno Moniz, Werner Geyer, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye 
+    <b>Zheyuan Zhang\*</b>, Yiyang Li\*, Nhi Ha Lan Le\*, Zehong Wang, Tianyi Ma, et al.
 
     [Submited to ARR Dec (Avg. Score 3.83; Meta 4)]
 
@@ -54,11 +54,11 @@ Selected Publications
 
 - [KDD'25] MOPI-HFRS: A Multi-objective Personalized Health-aware Food Recommendation System with LLM-enhanced Interpretation. [[paper](https://openreview.net/pdf?id=yapWkJ0lrh)][[code](https://github.com/Anonymous-Be3fb6/MOPI-HFRS/tree/main)]
 
-  <b>Zheyuan Zhang</b>, Zehong Wang, Tianyi Ma, Varun Sameer Taneja, Sofia Nelson, Nhi Ha Lan Le, Keerthiram Murugesan, Mingxuan Ju, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
+  <b>Zheyuan Zhang</b>, Zehong Wang, Tianyi Ma, Varun Sameer Taneja, Sofia Nelson, et al.
 
 - [KDD'24] Diet-ODIN: A Novel Framework for Opioid Misuse Detection with Interpretable Dietary Pattern. [[paper](https://dl.acm.org/doi/abs/10.1145/3637528.3671587)] [[code](https://github.com/JasonZhangzy1757/Diet-ODIN)]
 
-  <b>Zheyuan Zhang</b>\*, Zehong Wang\*, Shifu Hou, Evan Hall, Landon Bachman, Vincent Galassi, Jasmine White, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
+  <b>Zheyuan Zhang</b>\*, Zehong Wang\*, Shifu Hou, Evan Hall, Landon Bachman, et al.
 
 - [WSDM'25] SimMLP: Training MLPs on Graphs without Supervision [[paper](https://arxiv.org/abs/2402.08918)] [[code](https://github.com/Zehong-Wang/SimMLP)]
 
