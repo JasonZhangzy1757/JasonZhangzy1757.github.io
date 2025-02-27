@@ -30,23 +30,23 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 Preprint
 -----
 
- - NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning [[paper](https://arxiv.org/abs/2501.18739)][[code](https://anonymous.4open.science/r/NGQA-5E7F/README.md)]
+ - NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning <i>[Submitted to ARR Dec (Avg. Score 3.83; Meta 4) ]</i> [[paper](https://arxiv.org/abs/2501.18739)][[code](https://anonymous.4open.science/r/NGQA-5E7F/README.md)]
 
     <b>Zheyuan Zhang\*</b>, Yiyang Li\*, Nhi Ha Lan Le\*, Zehong Wang, Tianyi Ma, et al.
 
-    <i>[Submitted to ARR Dec (Avg. Score 3.83; Meta 4) ]</i>
+    
 
- - Neural Graph Pattern Machine [[paper](https://arxiv.org/abs/2501.18739)]
-
-    Zehong Wang, <b>Zheyuan Zhang</b>, Tianyi Ma, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
-
-    <i>[Submitted to ICML]</i>
-
- - Towards Graph Foundation Models: Learning Generalities Across Graphs via Task-trees [[paper](https://arxiv.org/abs/2412.16441)]
+ - Neural Graph Pattern Machine <i>[Submitted to ICML]</i> [[paper](https://arxiv.org/abs/2501.18739)]
 
     Zehong Wang, <b>Zheyuan Zhang</b>, Tianyi Ma, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
 
-    <i>[Submitted to ICML]</i>
+    
+
+ - Towards Graph Foundation Models: Learning Generalities Across Graphs via Task-trees <i>[Submitted to ICML]</i> [[paper](https://arxiv.org/abs/2412.16441)]
+
+    Zehong Wang, <b>Zheyuan Zhang</b>, Tianyi Ma, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye.
+
+    
 
 
 Selected Publications
