@@ -106,20 +106,24 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/ritek.png' alt="ritek" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/coleridge.avif' alt="coleridge" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-[RiTeK: A Dataset for Large Language Models Complex Reasoning over Textual Knowledge Graphs](https://arxiv.org/pdf/2410.13987)
-
-**Jiatan Huang**\*, Mingchen Li\*, Zonghai Yao, Zhichao Yang, Yongkang Xiao, Feiyun Ouyang, Xiaohan Li, Shuo Han, Hong Yu
-
-</div>
-</div>
-
-
 
 **Coleridge Initiative**  
 New York, NY, USA  
+
+**Research Scientist**  - *Oct 2021 – Mar 2023*
+
+**Associated Research Scientist**  - *Aug 2020 – Oct 2021*
+
+**Junior Research Scientist (Intern)**  - *Oct 2019 – Aug 2020*
+
+</div>
+</div>
+
+
+
+
 
 
 
