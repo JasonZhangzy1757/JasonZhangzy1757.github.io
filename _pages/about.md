@@ -115,7 +115,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 # 📝 Mentorship 
 --------------
 I've been fortunate to mentor and work alongside many brilliant minds:
-#### **Current Mentees**
+### **Current Mentees**
 
 - **[Zhengqing Yuan](https://dlyuangod.github.io/zhengqingyuan/)**, Ph.D. Student, University of Notre Dame (Sept. 2025 – present)  
 - **[Kaiwen Shi](https://scholar.google.com/citations?user=2SUGJDcAAAAJ&hl=en)**, Ph.D. Student, University of Notre Dame (Mar. 2025 – present)  
@@ -123,7 +123,7 @@ I've been fortunate to mentor and work alongside many brilliant minds:
 - **[Han Bao](https://www.linkedin.com/in/han-bao-59796b379/)**, Senior Undergraduate, Sichuan University (Sept. 2025 – present)  
 - **[Xiaoyu Ma](https://www.linkedin.com/in/xiaoyu-ma-29b8ba337/?originalSubdomain=sg)**, M.S. Student, National University of Singapore (Oct. 2025 – present)  
 
-#### **Former Mentees**
+### **Former Mentees**
 
 - **[Yiyang Li](https://yiyang-ian-li.github.io/)**, Ph.D. Student, University of Notre Dame (Sept. 2024 – Sept. 2025)  
 - **[Nhi Le](https://www.linkedin.com/in/nhi-hl-le/)**, M.S. Student, Brandeis University (Jun. 2024 – Jan. 2025)  
@@ -138,7 +138,7 @@ I've been fortunate to mentor and work alongside many brilliant minds:
 * **MOPI-HFRS** (Sept. 2024) @ IBM Research, Thomas J. Watson Research Center, Yorktown Heights.
 * **LLM Agents for Code Generation** (Jun. 2025) @ Amazon, Seattle.
 
-# Contact
+# 📢 Contact
 --------------
 * Email: zzhang42 [at] nd [dot] edu
 * Office: 247B Fitzpatrick Hall of Engineering
