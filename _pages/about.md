@@ -140,7 +140,7 @@ Yorktown Heights, NY, USA
 <!-- ===== COLERIDGE ===== -->
 <div class='paper-box'>
 <div class='paper-box-image'>
-<div><img src='http://JasonZhangzy1757.github.io/images/coleridge.avif' alt="coleridge" width="100%"></div>
+<div><img src='http://JasonZhangzy1757.github.io/images/coleridge.avif' alt="coleridge" width="20%"></div>
 </div>
 <div class='paper-box-text' markdown="1">
 
