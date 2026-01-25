@@ -103,25 +103,68 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 # 💻 Work Experience 
 --------------
-<div style="display: flex; align-items: flex-start; margin-bottom: 40px;">
+<!-- ===== AMAZON ===== -->
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div><img src='http://JasonZhangzy1757.github.io/images/amazon.webp' alt="amazon" width="100%"></div>
+</div>
+<div class='paper-box-text' markdown="1">
 
-  <!-- Logo -->
-  <div style="min-width: 150px; text-align: center; margin-right: 24px;">
-    <img src="/images/img/amazon.webp" alt="Amazon" width="140">
-  </div>
+**Amazon Science**  
+Palo Alto, CA / Seattle, WA, USA  
 
-  <!-- Experience List -->
-  <div>
-    <strong>Amazon Science</strong><br>
-    Palo Alto, CA / Seattle, WA, USA<br><br>
-    <strong>Applied Scientist (Part-time)</strong><br>
-    <em>Aug 2025 – Dec 2025</em><br><br>
-    <strong>Applied Scientist Intern</strong><br>
-    <em>May 2025 – Aug 2025</em><br><br>
-    <strong>Applied Scientist Intern</strong><br>
-    <em>May 2024 – Aug 2024</em><br>
-  </div>
+**Applied Scientist (Part-time)**  
+*Aug 2025 – Dec 2025*
 
+**Applied Scientist Intern**  
+*May 2025 – Aug 2025*
+
+**Applied Scientist Intern**  
+*May 2024 – Aug 2024*
+
+</div>
+</div>
+
+<br>
+
+<!-- ===== IBM ===== -->
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div><img src='http://JasonZhangzy1757.github.io/images/ibm.png' alt="ibm" width="100%"></div>
+</div>
+<div class='paper-box-text' markdown="1">
+
+**IBM Research**  
+Yorktown Heights, NY, USA  
+
+**Student Researcher (Part-time)**  
+*Jun 2024 – May 2025*
+
+</div>
+</div>
+
+<br>
+
+<!-- ===== COLERIDGE ===== -->
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div><img src='http://JasonZhangzy1757.github.io/images/coleridge.avif' alt="coleridge" width="100%"></div>
+</div>
+<div class='paper-box-text' markdown="1">
+
+**Coleridge Initiative**  
+New York, NY, USA  
+
+**Research Scientist**  
+*Oct 2021 – Mar 2023*
+
+**Associated Research Scientist**  
+*Aug 2020 – Oct 2021*
+
+**Junior Research Scientist (Intern)**  
+*Oct 2019 – Aug 2020*
+
+</div>
 </div>
 
 
