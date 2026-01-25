@@ -10,13 +10,13 @@ redirect_from:
 My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame. My advisor is [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). Under Prof. Ye's supervision, I collaborate with my [lab mates](http://yes-lab.org/students.html), IBM Research, and [Prof. Chuxu Zhang](https://chuxuzhang.github.io/). Before joining Notre Dame, I received my B.S. degree at Wuhan University (WHU) in 2019 and M.S. degree at New York University (NYU) in 2020. My research focuses on post-training strategies for large language models, with a focus on optimizing LLM agent behaviors, such as improving performance, reducing manual intervention, and enhancing alignment. Specifically, the topics cover the following three aspects: Dynamic Multi-agent System Design; Retrieval Augmented Generation; Reinforcement Learning. My research application fields include: LLM for coding and data science, Health intelligence and other social science. For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV_10092025.pdf).
 
 
-<!-- News section header + button on one line -->
-<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 4px;">
-  <h1 style="margin: 0;">🔥 News</h1>
+<!-- Header row: title on the left, button on the right -->
+<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+  <h2 style="margin: 0;">🔥 News</h2>
 
-  <!-- Option B: Subtle outline button -->
+  <!-- Option B style button -->
   <button 
-    id="toggle-button"
+    id="news-toggle"
     type="button"
     style="
       font-size: 12px; 
@@ -28,7 +28,7 @@ My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department o
       cursor: pointer;
       transition: 0.2s;
     " 
-    onclick="toggleHiddenItems()"
+    onclick="toggleNews()"
     onmouseover="this.style.backgroundColor='rgba(77,166,255,0.15)'"
     onmouseout="this.style.backgroundColor='transparent'"
   >
@@ -36,11 +36,11 @@ My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department o
   </button>
 </div>
 
-<!-- faint line under the title -->
+<!-- faint line under the header -->
 <hr style="margin: 0 0 12px 0;">
 
-<!-- News content (scrollable area) -->
-<div style="max-height: 180px; overflow-y: auto; padding-left: 20px; margin-bottom: 16px;">
+<!-- visible + hidden news items -->
+<div style="padding-left: 20px; margin-bottom: 16px;">
 
   <!-- always visible items -->
   <ul style="margin-top: 0; margin-bottom: 8px;">
@@ -50,8 +50,8 @@ My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department o
     <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
   </ul>
 
-  <!-- hidden items (initially collapsed) -->
-  <div id="hidden-items" style="display: none;">
+  <!-- extra items (initially hidden) -->
+  <div id="news-hidden" style="display: none;">
     <ul style="margin-top: 0;">
       <li><strong>[2024.11]</strong> One paper is accepted by KDD 2025. See you in Toronto!</li>
       <li><strong>[2024.10]</strong> One paper is accepted by WSDM 2025.</li>
@@ -67,27 +67,26 @@ My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department o
 
 </div>
 
-<!-- toggle logic -->
+<!-- simple global toggle function -->
 <script>
-  function toggleHiddenItems() {
-    var hiddenItems = document.getElementById('hidden-items');
-    var button = document.getElementById('toggle-button');
-    if (!hiddenItems || !button) return;
+  function toggleNews() {
+    var hidden = document.getElementById('news-hidden');
+    var btn = document.getElementById('news-toggle');
+    if (!hidden || !btn) return;
 
-    // if style is '' (not yet set), treat as 'none'
-    var current = hiddenItems.style.display || 'none';
+    var current = hidden.style.display || 'none';
 
     if (current === 'none') {
-      hiddenItems.style.display = 'block';
-      button.textContent = 'Show Less';
+      hidden.style.display = 'block';
+      btn.textContent = 'Show Less';
     } else {
-      hiddenItems.style.display = 'none';
-      button.textContent = 'Show More';
+      hidden.style.display = 'none';
+      btn.textContent = 'Show More';
     }
   }
 
-  // expose to inline onclick in some strict environments
-  window.toggleHiddenItems = toggleHiddenItems;
+  // ensure function is available to inline onclick
+  window.toggleNews = toggleNews;
 </script>
 
 Selected Publications
