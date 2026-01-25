@@ -107,7 +107,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
   <!-- Logo -->
   <div style="min-width: 150px; text-align: center; margin-right: 24px;">
-    <img src="/images/img/amazon_logo.png" alt="Amazon" width="140">
+    <img src="/images/img/amazon.webp" alt="Amazon" width="140">
   </div>
 
   <!-- Experience List -->
