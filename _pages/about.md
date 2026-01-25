@@ -10,22 +10,89 @@ redirect_from:
 My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame. My advisor is [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). Under Prof. Ye's supervision, I collaborate with my [lab mates](http://yes-lab.org/students.html), IBM Research, and [Prof. Chuxu Zhang](https://chuxuzhang.github.io/). Before joining Notre Dame, I received my B.S. degree at Wuhan University (WHU) in 2019 and M.S. degree at New York University (NYU) in 2020. My research focuses on post-training strategies for large language models, with a focus on optimizing LLM agent behaviors, such as improving performance, reducing manual intervention, and enhancing alignment. Specifically, the topics cover the following three aspects: Dynamic Multi-agent System Design; Retrieval Augmented Generation; Reinforcement Learning. My research application fields include: LLM for coding and data science, Health intelligence and other social science. For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV_10092025.pdf).
 
 
-News
+🔥 News
 ======
-* [2025.10] We have released [LLMs4ALL](https://arxiv.org/pdf/2509.19580), an extensive survey on LLMs for research and applications in academic displines.  
-* [2025.09] Two papers are accepted to NeurIPS. 
-* [2025.05] One paper is accepted to ACL 2025 main conference. One paper is accepeted ACL 2025 findings. 
-* [2025.05] Two papers are accepted by ICML 2025. 
-* [2025.02] I will join Amazon as Applied Scientist Intern this Summer. See you in Seattle!
-* [2025.01] One paper is accepted by NAACL 2025 main conference. See you in Albuquerque!
-* [2024.11] One paper is accepted by KDD 2025. See you in Toronto!
-* [2024.10] One paper is accepted by WSDM 2025.
-* [2024.09] I will be giving a talk about our work, MOPI-HFRS, at IBM T.J. Watson Research Center. See you in Yorktown Heights!
-* [2024.09] One paper is accepted by NeurIPS 2024.
-* [2024.06] I start collaboration with IBM Research, working under the mentorship of [Keerthiram Murugesan](https://keerthi166.github.io/).
-* [2024.05] One paper is accepted by KDD 2024. 
-* [2024.04] One paper is accepted by IJCAI 2024.
+<!-- Header + Toggle Button -->
+<div style="display: flex; align-items: center; gap: 10px;">
+  <!-- Option B Button -->
+  <button 
+    style="
+      font-size: 12px; 
+      padding: 6px 12px; 
+      background-color: transparent;
+      color: #4da6ff; 
+      border: 1px solid #4da6ff; 
+      border-radius: 6px; 
+      cursor: pointer;
+      transition: 0.2s;
+    " 
+    onclick="toggleHiddenItems()"
+    onmouseover="this.style.backgroundColor='rgba(77,166,255,0.15)'"
+    onmouseout="this.style.backgroundColor='transparent'"
+    id="toggle-button"
+  >
+    Show More
+  </button>
+</div>
 
+<br>
+
+<!-- Scrollable Box -->
+<div style="max-height: 180px; overflow-y: auto; padding-left: 20px;">
+
+<ul>
+  <li><strong>[2025.12]</strong> Three papers are accepted to EACL 2026.</li>
+  
+  <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
+
+  <li><strong>[2025.02]</strong> I will continute my intern at Amazon this Autumn.</li>
+
+  <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
+
+  <li><strong>[2025.05]</strong> Two papers are accepted to ACL 2025.</li>
+
+  <li><strong>[2025.05]</strong> Two papers are accepted by ICML 2025.</li>
+</ul>
+<!-- Hidden Items -->
+<div id="hidden-items" style="display: none;">
+<ul>
+  <li><strong>[2025.02]</strong> I will join Amazon as Applied Scientist Intern this Summer. See you in Seattle!</li>
+
+  <li><strong>[2025.01]</strong> One paper is accepted by NAACL 2025. See you in Albuquerque!</li>
+
+  <li><strong>[2024.11]</strong> One paper is accepted by KDD 2025. See you in Toronto!</li>
+
+  <li><strong>[2024.10]</strong> One paper is accepted by WSDM 2025.</li>
+
+  <li><strong>[2024.09]</strong> I will be giving a talk about our work, MOPI-HFRS, at IBM T.J. Watson Research Center. See you in Yorktown Heights!</li>
+
+  <li><strong>[2024.09]</strong> One paper is accepted by NeurIPS 2024.</li>
+
+  <li><strong>[2024.06]</strong> I start collaboration with IBM Research, working under the mentorship of <a href="https://keerthi166.github.io/">Keerthiram Murugesan</a>.</li>
+
+  <li><strong>[2024.05]</strong> One paper is accepted by KDD 2024.</li>
+
+  <li><strong>[2024.04]</strong> One paper is accepted by IJCAI 2024.</li>
+</ul>
+</div>
+
+</div>
+
+<!-- Toggle Script -->
+<script>
+  function toggleHiddenItems() {
+    var hiddenItems = document.getElementById('hidden-items');
+    var button = document.getElementById('toggle-button');
+
+    if (hiddenItems.style.display === 'none') {
+      hiddenItems.style.display = 'block';
+      button.textContent = 'Show Less';
+    } else {
+      hiddenItems.style.display = 'none';
+      button.textContent = 'Show More';
+    }
+  }
+</script>
 
 Selected Publications
 ======
@@ -33,6 +100,7 @@ Please directly check my [CV](http://JasonZhangzy1757.github.io/files/CV_1009202
 
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
+# 📖 Educations 
 
 Contact
 ======
