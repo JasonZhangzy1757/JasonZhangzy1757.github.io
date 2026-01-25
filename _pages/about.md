@@ -106,7 +106,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/amazon.webp' alt="ritek" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/amazon.webp' alt="ritek" width="50%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [RiTeK: A Dataset for Large Language Models Complex Reasoning over Textual Knowledge Graphs](https://arxiv.org/pdf/2410.13987)
