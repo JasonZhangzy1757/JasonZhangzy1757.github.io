@@ -104,9 +104,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 # 💻 Work Experience 
 --------------
 <!-- ===== AMAZON ===== -->
-<div class='paper-box'>
-<div class='paper-box-image'>
-<div><img src='http://JasonZhangzy1757.github.io/images/amazon.webp' alt="amazon" width="100%"></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='http://JasonZhangzy1757.github.io/images/amazon.webp' alt="amazon" width="100%"></div>
 </div>
 <div class='paper-box-text' markdown="1">
 
@@ -124,6 +122,19 @@ Palo Alto, CA / Seattle, WA, USA
 
 </div>
 </div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='[images/ritek.png](http://JasonZhangzy1757.github.io/images/amazon.webp)' alt="ritek" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[RiTeK: A Dataset for Large Language Models Complex Reasoning over Textual Knowledge Graphs](https://arxiv.org/pdf/2410.13987)
+
+**Jiatan Huang**\*, Mingchen Li\*, Zonghai Yao, Zhichao Yang, Yongkang Xiao, Feiyun Ouyang, Xiaohan Li, Shuo Han, Hong Yu
+
+</div>
+</div>
+
+
 
 <br>
 
