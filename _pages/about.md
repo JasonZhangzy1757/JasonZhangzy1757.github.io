@@ -109,14 +109,11 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/coleridge.avif' alt="coleridge" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Coleridge Initiative**  
-New York, NY, USA  
+**Coleridge Initiative**   <i>New York, NY, USA</i>  
 
-**Research Scientist**  - *Oct 2021 – Mar 2023*
-
-**Associated Research Scientist**  - *Aug 2020 – Oct 2021*
-
-**Junior Research Scientist (Intern)**  - *Oct 2019 – Aug 2020*
+* **Research Scientist**   *Oct. 2021 – Mar. 2023*
+* **Associated Research Scientist**   *Aug. 2020 – Oct. 2021*
+* **Junior Research Scientist (Intern)**  *Oct. 2019 – Aug. 2020*
 
 </div>
 </div>
