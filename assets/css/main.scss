@@ -43,50 +43,38 @@
 
 .paper-box {
     display: flex;
-    justify-content: left;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
-
-    .paper-box-image{
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        order: 2;
-        img {
-            max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
-        }
-    }
-    
-    .paper-box-text{
-        max-width: 100%;
-        order: 1;
-    }
-    
-    @include breakpoint($medium) {
-        .paper-box-image{
-            justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
-            order: 1;
-        }
-        
-        .paper-box-text{
-            justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
-            order: 2;
-        }
-
-    }
-
-
+    padding: 1.5em 0;
 }
+
+/* LEFT — IMAGE */
+.paper-box .paper-box-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 160px;       /* smaller image */
+    max-width: 22%;         /* tighten width so text gets more room */
+    margin-right: 1.5em;    /* spacing between image & text */
+}
+
+.paper-box .paper-box-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: none;       /* remove black-looking frame */
+    border: none;           /* ensure no default border */
+}
+
+/* RIGHT — TEXT */
+.paper-box .paper-box-text {
+    flex: 1;               /* text takes remaining width */
+    max-width: 75%;
+}
+
 
 .badge {
     padding-left: 1rem;
