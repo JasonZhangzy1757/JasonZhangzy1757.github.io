@@ -103,28 +103,10 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 # 💻 Work Experience 
 --------------
-<!-- ===== AMAZON ===== -->
-<div class='paper-box'><div class='paper-box-image'><div><img src='http://JasonZhangzy1757.github.io/images/amazon.webp' alt="amazon" width="100%"></div>
-</div>
-<div class='paper-box-text' markdown="1">
-
-**Amazon Science**  
-Palo Alto, CA / Seattle, WA, USA  
-
-**Applied Scientist (Part-time)**  
-*Aug 2025 – Dec 2025*
-
-**Applied Scientist Intern**  
-*May 2025 – Aug 2025*
-
-**Applied Scientist Intern**  
-*May 2024 – Aug 2024*
-
-</div>
-</div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='[images/ritek.png](http://JasonZhangzy1757.github.io/images/amazon.webp)' alt="ritek" width="100%"></div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/amazon.webp' alt="ritek" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [RiTeK: A Dataset for Large Language Models Complex Reasoning over Textual Knowledge Graphs](https://arxiv.org/pdf/2410.13987)
@@ -133,7 +115,6 @@ Palo Alto, CA / Seattle, WA, USA
 
 </div>
 </div>
-
 
 
 <br>
