@@ -103,6 +103,26 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 # 💻 Work Experience 
 --------------
+<div style="display: flex; align-items: flex-start; margin-bottom: 40px;">
+
+  <!-- Logo -->
+  <div style="min-width: 150px; text-align: center; margin-right: 24px;">
+    <img src="/images/img/amazon_logo.png" alt="Amazon" width="140">
+  </div>
+
+  <!-- Experience List -->
+  <div>
+    <strong>Amazon Science</strong><br>
+    Palo Alto, CA / Seattle, WA, USA<br><br>
+    <strong>Applied Scientist (Part-time)</strong><br>
+    <em>Aug 2025 – Dec 2025</em><br><br>
+    <strong>Applied Scientist Intern</strong><br>
+    <em>May 2025 – Aug 2025</em><br><br>
+    <strong>Applied Scientist Intern</strong><br>
+    <em>May 2024 – Aug 2024</em><br>
+  </div>
+
+</div>
 
 
 # 📖 Educations 
