@@ -138,11 +138,33 @@ Yorktown Heights, NY, USA
 <br>
 
 <!-- ===== COLERIDGE ===== -->
+<!-- ===== COLERIDGE ===== -->
 <div class='paper-box'>
-<div class='paper-box-image'>
-<div><img src='http://JasonZhangzy1757.github.io/images/coleridge.avif' alt="coleridge" width="20%"></div>
+  
+  <div class='paper-box-image'>
+    <div>
+      <img src='http://JasonZhangzy1757.github.io/images/coleridge.avif' 
+           alt="coleridge" width="30%">
+    </div>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+
+**Coleridge Initiative**  
+New York, NY, USA  
+
+**Research Scientist**  
+*Oct 2021 – Mar 2023*
+
+**Associated Research Scientist**  
+*Aug 2020 – Oct 2021*
+
+**Junior Research Scientist (Intern)**  
+*Oct 2019 – Aug 2020*
+
+  </div>
+
 </div>
-<div class='paper-box-text' markdown="1">
 
 **Coleridge Initiative**  
 New York, NY, USA  
