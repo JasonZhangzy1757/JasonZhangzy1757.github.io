@@ -46,7 +46,7 @@ My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department o
   <ul style="margin-top: 0; margin-bottom: 8px;">
     <li><strong>[2025.12]</strong> Three papers are accepted to EACL 2026.</li>
     <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
-    <li><strong>[2025.02]</strong> I will continue my intern at Amazon this Autumn.</li>
+    <li><strong>[2025.09]</strong> I will continue my intern at Amazon this Autumn.</li>
     <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
   </ul>
 
@@ -95,14 +95,25 @@ Please directly check my [CV](http://JasonZhangzy1757.github.io/files/CV_1009202
 
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
-📖 Educations 
-======
-* 2023.07 - 2028.06 (<i>expected</i>), Ph.D., University of Notre Dame
-* 2019.08 - 2020.08, M.S., New York University
-* 2015.09 - 2019.06, B.S., Wuhan University  
+# 📖 Educations 
 
-Contact
-======
+* <i>2023.07 - present</i>, Ph.D., University of Notre Dame
+* <i>2019.08 - 2020.08</i>, M.S., New York University
+* <i>2015.09 - 2019.06</i>, B.S., Wuhan University
+
+# 💬 Invited Talks
+--------------
+* **MOPI-HFRS** (Sept. 2024) @ IBM Research, Thomas J. Watson Research Center, Yorktown Heights.
+* **LLM Agents for Code Generation** (Jun. 2025) @ Amazon, Seattle.
+
+# 📝 Collaborators
+I've been fortunate to mentor and work alongside many brilliant minds:
+
+
+
+
+
+# Contact
 * Email: zzhang42 [at] nd [dot] edu
 * Office: 247B Fitzpatrick Hall of Engineering
 * Location: University of Notre Dame, Notre Dame, IN 46565
