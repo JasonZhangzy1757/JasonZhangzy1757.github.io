@@ -41,7 +41,7 @@
 @import "print";
 
 
-.paper-box {
+.logo-box {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -52,7 +52,7 @@
 }
 
 /* LEFT — IMAGE */
-.paper-box .paper-box-image {
+.logo-box .logo-box-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@
     margin-right: 1.5em;    /* spacing between image & text */
 }
 
-.paper-box .paper-box-image img {
+.logo-box .logo-box-image img {
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -70,7 +70,7 @@
 }
 
 /* RIGHT — TEXT */
-.paper-box .paper-box-text {
+.logo-box .logo-box-text {
     flex: 1;               /* text takes remaining width */
     max-width: 75%;
 }
