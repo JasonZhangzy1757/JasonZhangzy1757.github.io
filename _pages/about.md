@@ -111,7 +111,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/agentrouter.png' alt="agentrouter" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<div style="font-size: 1.2rem; line-height: 1.5;">
+<div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/abs/2510.05445">AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</a> <em>[Arxiv Oct.]</em><br><br>
 
@@ -126,7 +126,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/mapro.png' alt="mapro" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<div style="font-size: 1.2rem; line-height: 1.5;">
+<div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/abs/2510.07475">MAPRO: Recasting Multi-Agent Prompt Optimization as Maximum a Posteriori Inference</a> <em>[EACL'26]</em><br><br>
 
