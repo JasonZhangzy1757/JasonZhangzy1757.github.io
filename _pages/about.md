@@ -107,12 +107,12 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
-<div class='paper-box'><div class='paper-box-image'><div class="badge"><div><img src='images/agentrouter.png' alt="agentrouter" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="badge"></div><img src='images/agentrouter.png' alt="agentrouter" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering](https://arxiv.org/abs/2510.05445) *[Arxiv Oct.]*
 
-**Zheyuan Zhang***, Kaiwen Shi*, Zhengqing Yuan, Zehong Wang, Tianyi Ma, Keerthiram Murugesan, Vincent Galassi, Chuxu Zhang, Yanfang Ye
+**Zheyuan Zhang**\*, Kaiwen Shi\*, Zhengqing Yuan, Zehong Wang, Tianyi Ma, Keerthiram Murugesan, Vincent Galassi, Chuxu Zhang, Yanfang Ye
 
 </div>
 </div>
