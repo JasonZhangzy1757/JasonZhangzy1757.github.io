@@ -146,7 +146,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 * <i>2015.09 - 2019.06</i>, B.S., Wuhan University
 
 
-<h1 id="others">📝 Mentorship</h1>
+<h1 id="mentorship">📝 Mentorship</h1>
 --------------
 I've been fortunate to mentor and work alongside many brilliant minds:
 ### **Current Mentees**
