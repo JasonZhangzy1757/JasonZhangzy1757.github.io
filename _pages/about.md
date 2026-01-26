@@ -103,10 +103,10 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 </script>
 
 <h1 id="selected-publications">📚 Selected Publications</h1>
---------------
 
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
+--------------
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/agentrouter.png' alt="agentrouter" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -118,6 +118,75 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
   <strong>Zheyuan Zhang</strong>*, Kaiwen Shi*, Zhengqing Yuan,  
   Zehong Wang, Tianyi Ma, Keerthiram Murugesan,  
   Vincent Galassi, Chuxu Zhang, Yanfang Ye
+</div>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/mapro.png' alt="mapro" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div style="font-size: 1.2rem; line-height: 1.5;">
+  <!-- all your publication text here -->
+  <a href="https://arxiv.org/abs/2510.07475">MAPRO: Recasting Multi-Agent Prompt Optimization as Maximum a Posteriori Inference</a> <em>[EACL'26]</em><br><br>
+
+  <strong>Zheyuan Zhang</strong>, Lin Ge, Hongjiang Li, Weicheng Zhu, Chuxu Zhang, Yanfang Ye
+</div>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/ngrouter.png' alt="ngrouter" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div style="font-size: 1.2rem; line-height: 1.5;">
+  <!-- all your publication text here -->
+  <a href="https://arxiv.org/abs/2510.09854">NG-Router: Graph-Supervised Multi-Agent Collaboration for Nutrition Question Answering</a> <em>[EACL'26]</em><br><br>
+
+  Kaiwen Shi*, Zheyuan Zhang<strong>Zheyuan Zhang</strong>*, Zhengqing Yuan, 
+  Keerthiram Murugesan, Vincent Galass, Chuxu Zhang, Yanfang Ye
+</div>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/ngqa.png' alt="ngqa" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div style="font-size: 1.2rem; line-height: 1.5;">
+  <!-- all your publication text here -->
+  <a href="https://arxiv.org/abs/2412.15547">NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning</a> <em>[ACL'25]</em><br><br>
+
+  <strong>Zheyuan Zhang</strong>*, Yiyang Li*, Nhi Ha Lan Le*, Zehong Wang, 
+  Tianyi Ma, Vincent Galassi, Keerthiram Murugesan, Nuno Moniz, Werner Geyer, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye
+</div>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/mopi.png' alt="mopi" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div style="font-size: 1.2rem; line-height: 1.5;">
+  <!-- all your publication text here -->
+  <a href="https://arxiv.org/abs/2412.08847">MOPI-HFRS: A Multi-objective Personalized Health-aware Food Recommendation System with LLM-enhanced Interpretation</a> <em>[KDD'25]</em><br><br>
+
+  <strong>Zheyuan Zhang</strong>, Zehong Wang, Tianyi Ma, Varun Sameer Taneja, 
+  Sofia Nelson, Nhi Ha Lan Le, Keerthiram Murugesan, Mingxuan Ju, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye
+</div>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/diet.png' alt="diet" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div style="font-size: 1.2rem; line-height: 1.5;">
+  <!-- all your publication text here -->
+  <a href="https://arxiv.org/abs/2403.08820">Diet-ODIN: A Novel Framework for Opioid Misuse Detection with Interpretable Dietary Patterns</a> <em>[KDD'24]</em><br><br>
+
+  <strong>Zheyuan Zhang</strong>*, Zehong Wang*, Shifu Hou, Evan Hall, Landon Bachman, 
+  Vincent Galassi, Jasmine White, Nitesh V. Chawla, Chuxu Zhang, Yanfang Ye
 </div>
 
 </div>
@@ -185,7 +254,9 @@ I've been fortunate to mentor and work alongside many brilliant minds:
 
 - **[Yiyang Li](https://yiyang-ian-li.github.io/)**, Ph.D. Student, University of Notre Dame (Sept. 2024 – Sept. 2025)  
 - **[Nhi Le](https://www.linkedin.com/in/nhi-hl-le/)**, M.S. Student, Brandeis University (Jun. 2024 – Jan. 2025)  
-- **[Vinny Galassi](https://www.linkedin.com/in/vincent-galassi/)**, Junior Undergraduate, University of Notre Dame (2023 – 2025)  
+- **[Vinny Galassi](https://www.linkedin.com/in/vincent-galassi/)**, Junior Undergraduate, University of Notre Dame (2023 – 2025)
+- **[Sofia Nelson](https://www.linkedin.com/in/sofia-nelson-7a5882273/)**, Senior Undergraduate, University of Notre Dame (2024)
+- **[Varun Taneja](https://www.linkedin.com/in/varuntaneja7/)**, Senior Undergraduate, University of Notre Dame (2024)
 - **[Evan Hall](https://www.linkedin.com/in/evan-hall-703b341a3/)**, Senior Undergraduate, University of Notre Dame (2023 – 2024)  
 - **[Landon Bachman](https://www.linkedin.com/in/landon-bachman-983740203/)**, Senior Undergraduate, University of Notre Dame (2023 – 2024)  
 - **[Jasmine White](https://www.linkedin.com/in/jasmine-white-13b46021b/)**, Senior Undergraduate, Purdue University (2023 – 2024)  
