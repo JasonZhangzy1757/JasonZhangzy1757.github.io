@@ -75,6 +75,7 @@
     max-width: 75%;
 }
 
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
@@ -84,6 +85,7 @@ h1:before, .anchor:before {
     height: $scroll_offset; 
     margin-top: -$scroll_offset;
 }
+
 
 .paper-box {
     display: flex;
@@ -131,6 +133,7 @@ h1:before, .anchor:before {
 
 
 }
+
 
 
 .badge {
