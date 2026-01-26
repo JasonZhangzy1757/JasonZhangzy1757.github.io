@@ -1,8 +1,15 @@
 # main links links
 main:
-  # - title: "Publications"
-  #   url: /publications/
-
+   - title: "About Me"
+     url: "/#about-me"
+   - title: "Publications"
+     url: "/#Selected Publications"
+   - title: "Experiences"
+     url: "/#Work Experiences"
+   - title: "Education"
+     url: "/#Education"
+   - title: "Misscellaneous"
+     url: "/#Mentorship"
   # - title: "Talks"
   #   url: /talks/    
 
