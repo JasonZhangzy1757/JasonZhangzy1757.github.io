@@ -139,7 +139,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/ngrouter.png' alt="ngrouter" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<div style="font-size: 1.2rem; line-height: 1.5;">
+<div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/abs/2510.09854">NG-Router: Graph-Supervised Multi-Agent Collaboration for Nutrition Question Answering</a> <em>[EACL'26]</em><br><br>
 
@@ -153,7 +153,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/ngqa.png' alt="ngqa" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<div style="font-size: 1.2rem; line-height: 1.5;">
+<div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/abs/2412.15547">NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning</a> <em>[ACL'25]</em><br><br>
 
@@ -167,7 +167,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/mopi.png' alt="mopi" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<div style="font-size: 1.2rem; line-height: 1.5;">
+<div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/abs/2412.08847">MOPI-HFRS: A Multi-objective Personalized Health-aware Food Recommendation System with LLM-enhanced Interpretation</a> <em>[KDD'25]</em><br><br>
 
@@ -181,7 +181,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/diet.png' alt="diet" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<div style="font-size: 1.2rem; line-height: 1.5;">
+<div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/abs/2403.08820">Diet-ODIN: A Novel Framework for Opioid Misuse Detection with Interpretable Dietary Patterns</a> <em>[KDD'24]</em><br><br>
 
