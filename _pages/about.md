@@ -97,11 +97,11 @@ My research focuses on post-training strategies for large language models, with 
   window.toggleNews = toggleNews;
 </script>
 
-# 📚 Selected Publications
+<h1 id="selected-publications">📚 Selected Publications</h1>
 --------------
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
-# 💻 Work Experience 
+<h1 id="work-experience">💻 Work Experience</h1>
 --------------
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -139,15 +139,14 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 <div style="height: 40px;"></div>
 
-
-# 📖 Education 
+<h1 id="education">📖 Education</h1>
 --------------
 * <i>2023.07 - present</i>, Ph.D., University of Notre Dame
 * <i>2019.08 - 2020.08</i>, M.S., New York University
 * <i>2015.09 - 2019.06</i>, B.S., Wuhan University
 
 
-# 📝 Mentorship 
+<h1 id="others">📝 Mentorship</h1>
 --------------
 I've been fortunate to mentor and work alongside many brilliant minds:
 ### **Current Mentees**
