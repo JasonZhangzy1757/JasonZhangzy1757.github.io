@@ -143,7 +143,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
   <!-- all your publication text here -->
   <a href="https://arxiv.org/abs/2510.09854">NG-Router: Graph-Supervised Multi-Agent Collaboration for Nutrition Question Answering</a> <em>[EACL'26]</em><br><br>
 
-  Kaiwen Shi*, Zheyuan Zhang<strong>Zheyuan Zhang</strong>*, Zhengqing Yuan, 
+  Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Zhengqing Yuan, 
   Keerthiram Murugesan, Vincent Galass, Chuxu Zhang, Yanfang Ye
 </div>
 
