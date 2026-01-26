@@ -103,7 +103,26 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 # 💻 Work Experience 
 --------------
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+**Amazon Science**   <i>Seattle, WA, USA</i>  
+
+* *Aug. 2025 – Dec. 2025*, **Applied Scientist (Part-time)**  
+* *May. 2025 – Aug. 2025*, **Applied Scientist (Intern)**    
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/ibm.webp' alt="ibm" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**IBM**   <i>Yorktown Heights, NY, USA</i>  
+
+* *Jun. 2024 – May. 2025*, **Student Researcher (Part-time)**   
+
+</div>
+</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/coleridge.avif' alt="coleridge" width="100%"></div></div>
@@ -111,9 +130,9 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 **Coleridge Initiative**   <i>New York, NY, USA</i>  
 
-* **Research Scientist**   (*Oct. 2021 – Mar. 2023*)
-* **Associated Research Scientist**   (*Aug. 2020 – Oct. 2021*)
-* **Junior Research Scientist (Intern)**  (*Oct. 2019 – Aug. 2020*)
+* *Oct. 2021 – Mar. 2023*, **Research Scientist**  
+* *Aug. 2020 – Oct. 2021*, **Associated Research Scientist**   
+* *Oct. 2019 – Aug. 2020*, **Junior Research Scientist (Intern)**  
 
 </div>
 </div>
