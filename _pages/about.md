@@ -106,7 +106,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Amazon Science**   <i>Seattle, WA, USA</i>  
+**Amazon Science**,   <i>Seattle, WA, USA</i>  
 
 * *Aug. 2025 – Dec. 2025*, **Applied Scientist (Part-time)**  
 * *May. 2025 – Aug. 2025*, **Applied Scientist (Intern)**    
@@ -117,7 +117,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/ibm.webp' alt="ibm" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**IBM**   <i>Yorktown Heights, NY, USA</i>  
+**IBM Research**,   <i>Yorktown Heights, NY, USA</i>  
 
 * *Jun. 2024 – May. 2025*, **Student Researcher (Part-time)**   
 
@@ -128,7 +128,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/coleridge.avif' alt="coleridge" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Coleridge Initiative**   <i>New York, NY, USA</i>  
+**Coleridge Initiative**,   <i>New York, NY, USA</i>  
 
 * *Oct. 2021 – Mar. 2023*, **Research Scientist**  
 * *Aug. 2020 – Oct. 2021*, **Associated Research Scientist**   
@@ -137,13 +137,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 </div>
 </div>
 
-
-
-
-
-
-
-
+<div style="height: 40px;"></div>
 
 
 # 📖 Educations 
