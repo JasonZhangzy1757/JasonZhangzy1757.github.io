@@ -111,9 +111,14 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/agentrouter.png' alt="agentrouter" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering](https://arxiv.org/abs/2510.05445) *[Arxiv Oct.]*
+<div style="font-size: 0.9rem; line-height: 1.35;">
+  <!-- all your publication text here -->
+  <a href="https://arxiv.org/abs/2510.05445">AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</a> <em>[Arxiv Oct.]</em><br><br>
 
-**Zheyuan Zhang**\*, Kaiwen Shi\*, Zhengqing Yuan, Zehong Wang, Tianyi Ma, Keerthiram Murugesan, Vincent Galassi, Chuxu Zhang, Yanfang Ye
+  <strong>Zheyuan Zhang</strong>*, Kaiwen Shi*, Zhengqing Yuan,  
+  Zehong Wang, Tianyi Ma, Keerthiram Murugesan,  
+  Vincent Galassi, Chuxu Zhang, Yanfang Ye
+</div>
 
 </div>
 </div>
