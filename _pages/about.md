@@ -107,7 +107,7 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/agentrouter.png' alt="amazon" width="200%"></div></div>
+<div class='paper-box'><div class='paper-box-image'>div class="badge"><div><img src='images/agentrouter.png' alt="amazon" width="200%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering](https://arxiv.org/abs/2510.05445) *[Arxiv Oct.]*
@@ -120,8 +120,8 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div style="height: 40px;"></div>
 <h1 id="work-experience">💻 Work Experience</h1>
 --------------
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='logo-box'><div class='logo-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
+<div class='logo-box-text' markdown="1">
 
 **Amazon Science**,   <i>Seattle, WA, USA</i>  
 
@@ -131,8 +131,8 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/ibm.webp' alt="ibm" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='logo-box'><div class='logo-box-image'><div><img src='images/ibm.webp' alt="ibm" width="100%"></div></div>
+<div class='logo-box-text' markdown="1">
 
 **IBM Research**,   <i>Yorktown Heights, NY, USA</i>  
 
@@ -142,8 +142,8 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/coleridge.avif' alt="coleridge" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='logo-box'><div class='logo-box-image'><div><img src='images/coleridge.avif' alt="coleridge" width="100%"></div></div>
+<div class='logo-box-text' markdown="1">
 
 **Coleridge Initiative**,   <i>New York, NY, USA</i>  
 
