@@ -9,7 +9,7 @@ redirect_from:
 
 My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame. My advisor is [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). Under Prof. Ye's supervision, I collaborate with my [lab mates](http://yes-lab.org/students.html), IBM Research, and [Prof. Chuxu Zhang](https://chuxuzhang.github.io/). 
 
-My research focuses on post-training strategies for large language models, with a focus on optimizing LLM agent behaviors, such as improving performance, reducing manual intervention, and enhancing alignment. Specifically, the topics cover the following three aspects: Dynamic Multi-agent System Design; Retrieval Augmented Generation; Reinforcement Learning. My research application fields include: LLM for coding and data science, Health intelligence and other social science. For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf).
+My research focuses on post-training strategies for large language models, with an emphasis on agent optimization and self-evolving agent behaviors. Specifically, my work spans three areas: dynamic multi-agent system design, retrieval-augmented generation, and agentic reinforcement learning under uncertainty. For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf).
 
 
 <!-- Header row: title on the left, button on the right -->
@@ -97,11 +97,9 @@ My research focuses on post-training strategies for large language models, with 
 
 # 📚 Selected Publications
 --------------
-Please directly check my [CV](http://JasonZhangzy1757.github.io/files/CV_10092025.pdf) for highlighted publications.
-
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
-# 💻 Work Experience 
+# 💻 Work Experiences 
 --------------
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
