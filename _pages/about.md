@@ -11,7 +11,12 @@ redirect_from:
 
 My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame. My advisor is [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). Under Prof. Ye's supervision, I collaborate with my [lab mates](http://yes-lab.org/students.html), IBM Research, and [Prof. Chuxu Zhang](https://chuxuzhang.github.io/). 
 
-My research focuses on post-training strategies for large language models, with an emphasis on agent optimization and self-evolving agent behaviors. Specifically, my work spans three areas: dynamic multi-agent system design, retrieval-augmented generation, and agentic reinforcement learning under uncertainty. For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf).
+My research focuses on post-training strategies for large language models, with an emphasis on agent optimization and self-evolving agent behaviors. Specifically, my work spans three areas: 
+* **Dynamic Multi-agent System Design**: prompt optimization ([EACL'26](https://arxiv.org/pdf/2510.07475)), self-evolving agents ([Arxiv](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854)), agent collaboration ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?); [Arxiv](https://arxiv.org/pdf/2510.05445?))
+*  **Retrieval-augmented Reasoning**: ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), for data analysis with long context ([Arxiv](https://arxiv.org/pdf/2601.02598)).
+*  **Uncertainty-aware Reinforcement Learning**: intention clarifying, uncertainty beyond entropy, uncertainty in VLA.
+
+For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf).
 
 
 <!-- Header row: title on the left, button on the right -->
@@ -48,7 +53,7 @@ My research focuses on post-training strategies for large language models, with 
 
   <!-- always visible items -->
   <ul style="margin-top: 0; margin-bottom: 8px;">
-    <li><strong>[2025.12]</strong> Three papers are accepted to EACL 2026.</li>
+    <li><strong>[2026.01]</strong> Three papers are accepted to EACL 2026.</li>
     <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
     <li><strong>[2025.09]</strong> I will continue my intern at Amazon this Autumn.</li>
     <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
