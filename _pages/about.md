@@ -99,7 +99,7 @@ My research focuses on post-training strategies for large language models, with 
 --------------
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
-# 💻 Work Experiences 
+# 💻 Work Experience 
 --------------
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -138,7 +138,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div style="height: 40px;"></div>
 
 
-# 📖 Educations 
+# 📖 Education 
 --------------
 * <i>2023.07 - present</i>, Ph.D., University of Notre Dame
 * <i>2019.08 - 2020.08</i>, M.S., New York University
