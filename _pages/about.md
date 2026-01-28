@@ -9,7 +9,7 @@ redirect_from:
 
 <h1 id="about-me">About Me</h1>
 
-My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame. My advisor is [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). Under Prof. Ye's supervision, I collaborate with my [lab mates](http://yes-lab.org/students.html), IBM Research, and [Prof. Chuxu Zhang](https://chuxuzhang.github.io/). 
+My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
 
 My research focuses on post-training strategies for large language models, with an emphasis on agent optimization and self-evolving agent behaviors. Specifically, my work spans three areas: 
 * **Dynamic Multi-agent System Design**: prompt optimization ([EACL'26](https://arxiv.org/pdf/2510.07475)), self-evolving agents ([Arxiv](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854)), agent collaboration ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?); [Arxiv](https://arxiv.org/pdf/2510.05445?))
