@@ -53,7 +53,8 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 
   <!-- always visible items -->
   <ul style="margin-top: 0; margin-bottom: 8px;">
-    <li><strong>[2026.01]</strong> Three papers are accepted to EACL 2026.</li>
+    <li><strong>[2026.02]</strong> I will join Amazon as Applied Scientist Intern this April. See you in Seattle.</li>
+    <li><strong>[2026.01]</strong> Three papers are accepted to EACL 2026. One paper is accecpted to ICLR 2026.</li>
     <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
     <li><strong>[2025.09]</strong> I will continue my intern at Amazon this Autumn.</li>
     <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
