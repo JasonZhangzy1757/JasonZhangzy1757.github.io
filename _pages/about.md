@@ -275,10 +275,10 @@ I've been fortunate to mentor and work alongside many brilliant minds:
 
 # 💬 Services
 --------------
-* Conference Senior Area Chair: KDD’26
-* Conference Reviewer: NeurIPS'26, ICML'26, ICLR’26, KDD’26, KDD’25, WWW’25
-* Journal Reviewer: Transactions on Big Data, DMKD, TIST, TMLR, TWEB
-* Teaching Assistant: FA23-CSE-40113, SP24-CSE-40113: Design/Analysis of Algorithms
+* **Conference Senior Area Chair**: KDD’26
+* **Conference Reviewer**: NeurIPS'26, ICML'26, ICLR’26, KDD’26, KDD’25, WWW’25
+* **Journal Reviewer**: Transactions on Big Data, DMKD, TIST, TMLR, TWEB
+* **Teaching Assistant**: FA23-CSE-40113, SP24-CSE-40113: Design/Analysis of Algorithms
 
 # 💬 Invited Talks
 --------------
