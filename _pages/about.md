@@ -9,7 +9,7 @@ redirect_from:
 
 <h1 id="about-me">About Me</h1>
 
-My name is Zheyuan (Jason) Zhang, a third-year Ph.D. student in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
+My name is Zheyuan (Jason) Zhang, a third-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
 
 My research focuses on post-training strategies for large language models, with an emphasis on agent optimization and self-evolving agent behaviors. Specifically, my work spans three areas: 
 * **Dynamic Multi-agent System Design**: prompt optimization ([EACL'26](https://arxiv.org/pdf/2510.07475)), self-evolving agents ([Arxiv](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854)), agent collaboration ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?); [Arxiv](https://arxiv.org/pdf/2510.05445?))
@@ -203,6 +203,16 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 **Amazon Science**,   <i>Seattle, WA, USA</i>  
 
+* *Apr. 2026 – Jul. 2026*, **Applied Scientist (Intern)**   
+
+</div>
+</div>
+
+<div class='logo-box'><div class='logo-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
+<div class='logo-box-text' markdown="1">
+
+**Amazon Science**,   <i>Seattle, WA, USA</i>  
+
 * *Aug. 2025 – Dec. 2025*, **Applied Scientist (Part-time)**  
 * *May. 2025 – Aug. 2025*, **Applied Scientist (Intern)**    
 
@@ -246,11 +256,14 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 I've been fortunate to mentor and work alongside many brilliant minds:
 ### **Current Mentees**
 
-- **[Han Bao](https://www.linkedin.com/in/han-bao-59796b379/)**, Senior Undergraduate, Sichuan University (Sept. 2025 – present)  
-- **[Xiaoyu Ma](https://www.linkedin.com/in/xiaoyu-ma-29b8ba337/?originalSubdomain=sg)**, M.S. Student, National University of Singapore (Oct. 2025 – present)  
+- **[Han Bao](https://www.linkedin.com/in/han-bao-59796b379/)**, Senior Undergraduate, Sichuan University (Sept. 2025 – present)
+- **[Jiatan Huang](https://j-huang01.github.io/)**, Ph.D. Student, University of Connecticut (Aug. 2025 - present)
+- **[Kaiwen Shi](https://scholar.google.com/citations?user=2SUGJDcAAAAJ&hl=zh-CN)**, Ph.D. Student, University of Notre Dame (Mar. 2025 - present)
+  
 
 ### **Former Mentees**
-  
+
+- **[Xiaoyu Ma](https://www.linkedin.com/in/xiaoyu-ma-29b8ba337/?originalSubdomain=sg)**, M.S. Student, National University of Singapore (Oct. 2025 – Jan. 2026)
 - **[Nhi Le](https://www.linkedin.com/in/nhi-hl-le/)**, M.S. Student, Brandeis University (Jun. 2024 – Jan. 2025)  
 - **[Vinny Galassi](https://www.linkedin.com/in/vincent-galassi/)**, Junior Undergraduate, University of Notre Dame (2023 – 2025)
 - **[Sofia Nelson](https://www.linkedin.com/in/sofia-nelson-7a5882273/)**, Senior Undergraduate, University of Notre Dame (2024)
@@ -259,6 +272,13 @@ I've been fortunate to mentor and work alongside many brilliant minds:
 - **[Landon Bachman](https://www.linkedin.com/in/landon-bachman-983740203/)**, Senior Undergraduate, University of Notre Dame (2023 – 2024)  
 - **[Jasmine White](https://www.linkedin.com/in/jasmine-white-13b46021b/)**, Senior Undergraduate, Purdue University (2023 – 2024)  
 
+
+# 💬 Services
+--------------
+* Conference Senior Area Chair: KDD’26
+* Conference Reviewer: NeurIPS'26, ICML'26, ICLR’26, KDD’26, KDD’25, WWW’25
+* Journal Reviewer: Transactions on Big Data, DMKD, TIST, TMLR, TWEB
+* Teaching Assistant: FA23-CSE-40113, SP24-CSE-40113: Design/Analysis of Algorithms
 
 # 💬 Invited Talks
 --------------
