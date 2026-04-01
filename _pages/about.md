@@ -53,6 +53,7 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 
   <!-- always visible items -->
   <ul style="margin-top: 0; margin-bottom: 8px;">
+    <li><strong>[2026.02]</strong> I will join ByteDance as Research Scientist Intern this July. See you in Seattle.</li>
     <li><strong>[2026.02]</strong> I will join Amazon as Applied Scientist Intern this April. See you in Seattle.</li>
     <li><strong>[2026.02]</strong> Our lab has released <a href="https://www.checkcitation.com/">CiteAudit</a>, a tool designed to streamline citation verification for researchers. Kudos to <a href="https://dlyuangod.github.io/zhengqingyuan/">Zhengqing</a>!</li>
     <li><strong>[2026.01]</strong> Three papers are accepted to EACL 2026. One paper is accecpted to ICLR 2026.</li>
@@ -198,6 +199,16 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 <div style="height: 40px;"></div>
 <h1 id="work-experience">💻 Work Experience</h1>
 --------------
+<div class='logo-box'><div class='logo-box-image'><div><img src='images/btyedance.webp' alt="btyedance" width="100%"></div></div>
+<div class='logo-box-text' markdown="1">
+
+**ByteDance**,   <i>Seattle, WA, USA</i>  
+
+* *Jul. 2026 – Oct. 2026*, **Research Scientist (Intern)**   
+
+</div>
+</div>
+
 <div class='logo-box'><div class='logo-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
 <div class='logo-box-text' markdown="1">
 
