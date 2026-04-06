@@ -16,7 +16,7 @@ My research focuses on post-training strategies for large language models, with 
 *  **Retrieval-augmented Reasoning**: ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), for data analysis with long context ([Arxiv](https://arxiv.org/pdf/2601.02598)).
 *  **Uncertainty-aware Reinforcement Learning**: intention clarifying, uncertainty beyond entropy, uncertainty in VLA.
 
-For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf).
+For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf). 
 
 
 <!-- Header row: title on the left, button on the right -->
@@ -53,6 +53,7 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 
   <!-- always visible items -->
   <ul style="margin-top: 0; margin-bottom: 8px;">
+    <li><strong>[2026.04]</strong> One paper is accepted to ACL. See you in San Diego!</li>
     <li><strong>[2026.03]</strong> I will join ByteDance as Research Scientist Intern this July. See you in Seattle.</li>
     <li><strong>[2026.02]</strong> I will join Amazon as Applied Scientist Intern this April. See you in Seattle.</li>
     <li><strong>[2026.02]</strong> Our lab has released <a href="https://www.checkcitation.com/">CiteAudit</a>, a tool designed to streamline citation verification for researchers. Kudos to <a href="https://dlyuangod.github.io/zhengqingyuan/">Zhengqing</a>!</li>
@@ -116,7 +117,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 <div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2510.05445">AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</a> <em>[Arxiv Oct.]</em><br><br>
+  <a href="https://arxiv.org/abs/2510.05445">AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</a> <em>[ACL'26 Main]</em><br><br>
 
   <strong>Zheyuan Zhang</strong>*, Kaiwen Shi*, Zhengqing Yuan,  
   Zehong Wang, Tianyi Ma, Keerthiram Murugesan,  
@@ -131,7 +132,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 <div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2510.07475">MAPRO: Recasting Multi-Agent Prompt Optimization as Maximum a Posteriori Inference</a> <em>[EACL'26]</em><br><br>
+  <a href="https://arxiv.org/abs/2510.07475">MAPRO: Recasting Multi-Agent Prompt Optimization as Maximum a Posteriori Inference</a> <em>[EACL'26 Findings]</em><br><br>
 
   <strong>Zheyuan Zhang</strong>, Lin Ge, Hongjiang Li, Weicheng Zhu, Chuxu Zhang, Yanfang Ye
 </div>
@@ -144,7 +145,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 <div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2510.09854">NG-Router: Graph-Supervised Multi-Agent Collaboration for Nutrition Question Answering</a> <em>[EACL'26]</em><br><br>
+  <a href="https://arxiv.org/abs/2510.09854">NG-Router: Graph-Supervised Multi-Agent Collaboration for Nutrition Question Answering</a> <em>[EACL'26 Main]</em><br><br>
 
   Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Zhengqing Yuan, 
   Keerthiram Murugesan, Vincent Galass, Chuxu Zhang, Yanfang Ye
@@ -158,7 +159,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 <div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2412.15547">NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning</a> <em>[ACL'25]</em><br><br>
+  <a href="https://arxiv.org/abs/2412.15547">NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning</a> <em>[ACL'25 Main]</em><br><br>
 
   <strong>Zheyuan Zhang</strong>*, Yiyang Li*, Nhi Ha Lan Le*, Zehong Wang, 
   Tianyi Ma, Vincent Galassi, Keerthiram Murugesan, Nuno Moniz, Werner Geyer, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye
