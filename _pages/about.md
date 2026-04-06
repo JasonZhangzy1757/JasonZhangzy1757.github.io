@@ -9,7 +9,9 @@ redirect_from:
 
 <h1 id="about-me">About Me</h1>
 
-My name is Zheyuan (Jason) Zhang, a third-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). My research focuses on post-training strategies for large language models, with an emphasis on agent systematization and optimization, where the goal is to enable self-evolving, adaptive agent systems that improve their knowledge usage, coordination strategies, and model behaviors over time to dynamic and complex environments robustly and safely. Specifically, my work spans three areas: 
+My name is Zheyuan (Jason) Zhang, a third-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
+
+My research focuses on post-training strategies for large language models, with an emphasis on agent systematization and optimization, where the goal is to enable self-evolving, adaptive agent systems that improve their knowledge usage, coordination strategies, and model behaviors over time to dynamic and complex environments robustly and safely. Specifically, my work spans three areas: 
 
 *  **Retrieval-augmented Reasoning**: GraphRAG for Reasoning ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), Long-context Reasoning ([Arxiv](https://arxiv.org/pdf/2601.02598)).
 * **Multi-agent Systematization and Orchestration**: Prompt Optimization ([EACL'26](https://arxiv.org/pdf/2510.07475)); ([Arxiv]()), Agent Collaboration Optimization ([ACL'26](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854)); ([Arxiv]()), Multi-agent for Data Collection ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?)). 
