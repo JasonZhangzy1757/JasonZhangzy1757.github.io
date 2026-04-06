@@ -9,12 +9,11 @@ redirect_from:
 
 <h1 id="about-me">About Me</h1>
 
-My name is Zheyuan (Jason) Zhang, a third-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
+My name is Zheyuan (Jason) Zhang, a third-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). My research focuses on post-training strategies for large language models, with an emphasis on agent systematization and optimization. Specifically, my work spans three areas: 
 
-My research focuses on post-training strategies for large language models, with an emphasis on agent optimization and self-evolving agent behaviors. Specifically, my work spans three areas: 
-* **Dynamic Multi-agent System Design**: prompt optimization ([EACL'26](https://arxiv.org/pdf/2510.07475)), self-evolving agents ([Arxiv](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854)), agent collaboration ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?); [Arxiv](https://arxiv.org/pdf/2510.05445?))
-*  **Retrieval-augmented Reasoning**: ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), for data analysis with long context ([Arxiv](https://arxiv.org/pdf/2601.02598)).
-*  **Uncertainty-aware Reinforcement Learning**: intention clarifying, uncertainty beyond entropy, uncertainty in VLA.
+*  **Retrieval-augmented Reasoning**: GraphRAG for Reasoning ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), Long-context Reasoning ([Arxiv](https://arxiv.org/pdf/2601.02598)).
+* **Multi-agent Systematization and Orchestration**: Prompt Optimization ([EACL'26](https://arxiv.org/pdf/2510.07475)); ([Arxiv]()), Agent Collaboration Optimization ([ACL'26](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854)); ([Arxiv]()), Multi-agent for Data Collection ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?)). 
+*  **Uncertainty-aware Reinforcement Learning**: Intention Clarification ([Arxiv](https://arxiv.org/pdf/2602.02455)), Interpretable Uncertainty Estimation.
 
 For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf). 
 
@@ -111,6 +110,20 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
 --------------
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/evolverouter.png' alt="evolverouter" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div style="font-size: 0.9rem; line-height: 1.35;">
+  <!-- all your publication text here -->
+  <a href="https://arxiv.org/abs/2510.05445">EvolveRouter: Co-Evolving Routing and Prompt for Multi-
+Agent Question Answering </a> <em>[Arxiv 26 Apr.]</em><br><br>
+
+  Jiatan Huang*, <strong>Zheyuan Zhang</strong>*, Kaiwen Shi*, Yanfang Ye, Chuxu Zhang
+</div>
+
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/agentrouter.png' alt="agentrouter" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
