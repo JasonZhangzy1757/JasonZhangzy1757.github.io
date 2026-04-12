@@ -57,7 +57,6 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
     <li><strong>[2026.04]</strong> One paper is accepted to ACL. See you in San Diego!</li>
     <li><strong>[2026.03]</strong> I will join ByteDance as Research Scientist Intern this July. See you in Seattle.</li>
     <li><strong>[2026.02]</strong> I will join Amazon as Applied Scientist Intern this April. See you in Seattle.</li>
-    <li><strong>[2026.02]</strong> Our lab has released <a href="https://www.checkcitation.com/">CiteAudit</a>, a tool designed to streamline citation verification for researchers. Kudos to <a href="https://dlyuangod.github.io/zhengqingyuan/">Zhengqing</a>!</li>
     <li><strong>[2026.01]</strong> Three papers are accepted to EACL 2026. One paper is accecpted to ICLR 2026.</li>
     <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
     <li><strong>[2025.09]</strong> I will continue my intern at Amazon this Autumn.</li>
