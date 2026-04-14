@@ -14,7 +14,7 @@ My name is Zheyuan (Jason) Zhang, a third-year Ph.D. Candidate in the Department
 My research focuses on post-training strategies for large language models, with an emphasis on agent systematization and optimization, where the goal is to enable self-evolving, adaptive agent systems that improve their knowledge usage, coordination strategies, and model behaviors over time to dynamic and complex environments robustly and safely. Specifically, my work spans three areas: 
 
 *  **Retrieval-augmented Reasoning**: GraphRAG for Reasoning ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), Long-context Reasoning ([Arxiv](https://arxiv.org/pdf/2601.02598)).
-* **Multi-agent Systematization and Orchestration**: Prompt Optimization ([EACL'26](https://arxiv.org/pdf/2510.07475)); ([Arxiv]()), Agent Collaboration Optimization ([ACL'26](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854)); ([Arxiv]()), Multi-agent for Data Collection ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?)). 
+* **Multi-agent Systematization and Orchestration**: Prompt Optimization ([EACL'26](https://arxiv.org/pdf/2510.07475); [Arxiv](https://arxiv.org/pdf/2604.05149)), Agent Collaboration Optimization ([ACL'26](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854); [Arxiv](https://arxiv.org/pdf/2604.05149)), Multi-agent for Data Collection ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?)). 
 *  **Uncertainty-aware Reinforcement Learning**: Intention Clarification ([Arxiv](https://arxiv.org/pdf/2602.02455)), Interpretable Uncertainty Estimation.
 
 For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf). 
@@ -116,7 +116,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 <div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2510.05445">EvolveRouter: Co-Evolving Routing and Prompt for Multi-
+  <a href="https://arxiv.org/pdf/2604.05149">EvolveRouter: Co-Evolving Routing and Prompt for Multi-
 Agent Question Answering </a> <em>[Arxiv 26 Apr.]</em><br><br>
 
   Jiatan Huang*, <strong>Zheyuan Zhang</strong>*, Kaiwen Shi*, Yanfang Ye, Chuxu Zhang
