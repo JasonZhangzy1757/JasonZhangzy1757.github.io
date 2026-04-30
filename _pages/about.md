@@ -15,7 +15,7 @@ My research focuses on post-training strategies for large language models, with 
 
 *  **Retrieval-augmented Reasoning**: GraphRAG for Reasoning ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), Long-context Reasoning ([Arxiv](https://arxiv.org/pdf/2601.02598)).
 * **Multi-agent Systematization and Orchestration**: Prompt Optimization ([EACL'26](https://arxiv.org/pdf/2510.07475); [Arxiv](https://arxiv.org/pdf/2604.05149)), Agent Collaboration Optimization ([ACL'26](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854); [Arxiv](https://arxiv.org/pdf/2604.05149)), Multi-agent for Data Collection ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?)). 
-*  **Uncertainty-aware Reinforcement Learning**: Intention Clarification ([Arxiv](https://arxiv.org/pdf/2602.02455)), Interpretable Uncertainty Estimation.
+*  **Uncertainty-aware Reinforcement Learning**: Intention Clarification ([ICML'26](https://arxiv.org/pdf/2602.02455)); Uncertainty Quantification.
 
 For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf). 
 
@@ -54,18 +54,19 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 
   <!-- always visible items -->
   <ul style="margin-top: 0; margin-bottom: 8px;">
+    <li><strong>[2026.04]</strong> Two papers are accepted to ICML 2026.</li>
     <li><strong>[2026.04]</strong> One paper is accepted to ACL 2026. See you in San Diego!</li>
     <li><strong>[2026.03]</strong> I will join ByteDance as Research Scientist Intern this July. See you in Seattle.</li>
     <li><strong>[2026.02]</strong> I will join Amazon as Applied Scientist Intern this April. See you in Seattle.</li>
     <li><strong>[2026.01]</strong> Three papers are accepted to EACL 2026.</li>
     <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
-    <li><strong>[2025.09]</strong> I will continue my intern at Amazon this Autumn.</li>
-    <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
   </ul>
 
   <!-- extra items (initially hidden) -->
   <div id="news-hidden" style="display: none;">
     <ul style="margin-top: 0;">
+      <li><strong>[2025.09]</strong> I will continue my intern at Amazon this Autumn.</li>
+      <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
       <li><strong>[2025.05]</strong> Two papers are accepted to ACL.</li>
       <li><strong>[2025.05]</strong> Two papers are accepted by ICML 2025.</li>
       <li><strong>[2025.02]</strong> I will join Amazon as Applied Scientist Intern this Summer. See you in Seattle!</li>
