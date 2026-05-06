@@ -286,11 +286,11 @@ I've been fortunate to mentor and work alongside many brilliant minds:
 - **[Han Bao](https://www.linkedin.com/in/han-bao-59796b379/)**, Senior Undergraduate, Sichuan University (Sept. 2025 – present)
 - **[Jiatan Huang](https://j-huang01.github.io/)**, Ph.D. Student, University of Connecticut (Aug. 2025 - present)
 - **[Kaiwen Shi](https://scholar.google.com/citations?user=2SUGJDcAAAAJ&hl=zh-CN)**, Ph.D. Student, University of Notre Dame (Mar. 2025 - present)
+- **[Xiaoyu Ma](https://www.linkedin.com/in/xiaoyu-ma-29b8ba337/?originalSubdomain=sg)**, M.S. Student, National University of Singapore (Oct. 2025 – present)
   
 
 ### **Former Mentees**
 
-- **[Xiaoyu Ma](https://www.linkedin.com/in/xiaoyu-ma-29b8ba337/?originalSubdomain=sg)**, M.S. Student, National University of Singapore (Oct. 2025 – Jan. 2026)
 - **[Nhi Le](https://www.linkedin.com/in/nhi-hl-le/)**, M.S. Student, Brandeis University (Jun. 2024 – Jan. 2025)  
 - **[Vinny Galassi](https://www.linkedin.com/in/vincent-galassi/)**, Junior Undergraduate, University of Notre Dame (2023 – 2025)
 - **[Sofia Nelson](https://www.linkedin.com/in/sofia-nelson-7a5882273/)**, Senior Undergraduate, University of Notre Dame (2024)
