@@ -283,7 +283,7 @@ Agent Question Answering </a> <em>[Arxiv 26 Apr.]</em><br><br>
 I've been fortunate to mentor and work alongside many brilliant minds:
 ### **Current Mentees**
 
-- **[Han Bao](https://www.linkedin.com/in/han-bao-59796b379/)**, Senior Undergraduate, Sichuan University (Sept. 2025 – present)
+- **[Han Bao](https://wad3birch.github.io/)**, Ph.D. Student, University of Notre Dame (Sept. 2025 – present)
 - **[Jiatan Huang](https://j-huang01.github.io/)**, Ph.D. Student, University of Connecticut (Aug. 2025 - present)
 - **[Kaiwen Shi](https://scholar.google.com/citations?user=2SUGJDcAAAAJ&hl=zh-CN)**, Ph.D. Student, University of Notre Dame (Mar. 2025 - present)
 - **[Xiaoyu Ma](https://www.linkedin.com/in/xiaoyu-ma-29b8ba337/?originalSubdomain=sg)**, M.S. Student, National University of Singapore (Oct. 2025 – present)
