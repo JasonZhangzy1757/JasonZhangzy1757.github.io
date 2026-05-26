@@ -120,7 +120,7 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
   <a href="https://arxiv.org/pdf/2604.05149">EvolveRouter: Co-Evolving Routing and Prompt for Multi-
 Agent Question Answering </a> <em>[Arxiv 26 Apr.]</em><br><br>
 
-  Jiatan Huang*, <strong>Zheyuan Zhang</strong>*, Kaiwen Shi*, Yanfang Ye, Chuxu Zhang
+  Jiatan Huang*, <strong>Zheyuan Zhang</strong>*, Kaiwen Shi, Yanfang Ye, Chuxu Zhang
 </div>
 
 </div>
