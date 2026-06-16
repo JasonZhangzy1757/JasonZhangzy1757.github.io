@@ -15,7 +15,7 @@ My research focuses on post-training strategies for large language models, with 
 
 *  **Retrieval-augmented Reasoning**: GraphRAG for Reasoning ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), Long-context Reasoning ([Arxiv](https://arxiv.org/pdf/2601.02598)).
 * **Agent Harnessing**: Instruction Optimization ([EACL'26](https://arxiv.org/pdf/2510.07475); [Arxiv](https://arxiv.org/pdf/2604.05149)), Task-aware Routing ([ACL'26](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854); [Arxiv](https://arxiv.org/pdf/2604.05149)), Data Collection Workflow ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?)). 
-*  **Uncertainty-aware Reinforcement Learning**: Uncertainty Quantification ([Arxiv](https://arxiv.org/pdf/2605.21801)), Uncertainty Calibraiton ([Arxiv](https://arxiv.org/pdf/2606.11512)), Intention Clarification ([ICML'26](https://arxiv.org/pdf/2602.02455)).
+*  **Uncertainty-aware Agentic RL**: Uncertainty Quantification ([Arxiv](https://arxiv.org/pdf/2605.21801)), Uncertainty Calibraiton ([Arxiv](https://arxiv.org/pdf/2606.11512)), Intention Clarification ([ICML'26](https://arxiv.org/pdf/2602.02455)).
 
 For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf). 
 
