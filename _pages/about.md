@@ -112,13 +112,13 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
 --------------
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/gcpo.png' alt="gcpo" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/GCPO.png' alt="gcpo" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/pdf/2604.05149">Why Semantic Entropy Fails: Geometry-Aware and
-Calibrated Uncertainty for Policy Optimization </a> <em>[Arxiv 26 Jun.]</em><br><br>
+Calibrated Uncertainty for Policy Optimization</a> <em>[Arxiv 26 Jun.]</em><br><br>
 
   <strong>Zheyuan Zhang</strong>, Kaiwen Shi, Han Bao, Zehong Wang, Tianyi Ma, Yanfang Ye
 </div>
@@ -133,7 +133,7 @@ Calibrated Uncertainty for Policy Optimization </a> <em>[Arxiv 26 Jun.]</em><br>
 <div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/pdf/2604.05149">SAGE: Answer-Conditioned Uncertainty Targets for Verbal Uncertainty
-Alignment </a> <em>[Arxiv 26 Jun.]</em><br><br>
+Alignment</a> <em>[Arxiv 26 Jun.]</em><br><br>
 
   Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Yanfang Ye
 </div>
@@ -148,7 +148,7 @@ Alignment </a> <em>[Arxiv 26 Jun.]</em><br><br>
 <div style="font-size: 0.9rem; line-height: 1.35;">
   <!-- all your publication text here -->
   <a href="https://arxiv.org/pdf/2604.05149">EvolveRouter: Co-Evolving Routing and Prompt for Multi-
-Agent Question Answering </a> <em>[Arxiv 26 Apr.]</em><br><br>
+Agent Question Answering</a> <em>[Arxiv 26 Apr.]</em><br><br>
 
   Jiatan Huang*, <strong>Zheyuan Zhang</strong>*, Kaiwen Shi, Yanfang Ye, Chuxu Zhang
 </div>
