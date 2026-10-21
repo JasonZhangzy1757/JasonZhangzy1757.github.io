@@ -26,7 +26,7 @@ I am specifically interested in the topics of **agent uncertainty** and **intera
 
 <div class="areas areas--focus" markdown="1">
 
-* **Uncertainty** ([Survey](https://openreview.net/pdf?id=7NoenVN5Ly)): Quantification ([GCPO](https://openreview.net/pdf?id=PetbEgY8Bs)); Calibration ([SAGE](https://arxiv.org/abs/2606.11512), LProp); Utilization ([GCPO](https://openreview.net/pdf?id=PetbEgY8Bs), [RAIL](https://arxiv.org/abs/2608.05080)).
+* **Agent Uncertainty** ([Survey](https://openreview.net/pdf?id=7NoenVN5Ly)): Uncertainty Quantification ([GCPO](https://openreview.net/pdf?id=PetbEgY8Bs)); Uncertainty Calibration ([SAGE](https://arxiv.org/abs/2606.11512), LProp); Uncertainty Utilization ([GCPO](https://openreview.net/pdf?id=PetbEgY8Bs), [RAIL](https://arxiv.org/abs/2608.05080)).
 * **Interactive Intent Alignment:** Benchmarking Intent Misalignment and Shifting ([Drift-Bench](https://arxiv.org/abs/2602.02455), [Drift-Bench++](https://arxiv.org/abs/2609.38604)); Interactive Policy Learning ([CLEAT](https://arxiv.org/abs/2610.12655), [StaGPO](https://arxiv.org/abs/2610.24294)).
 
 </div>
@@ -222,7 +222,7 @@ Alignment</a>
     <p><strong>Amazon Science</strong> <i>Seattle, WA, USA</i></p>
     <ul>
       <li><strong>Applied Scientist (Part-time)</strong> <em>Aug. 2025 – Dec. 2025</em></li>
-      <li><strong>Applied Scientist (Intern)</strong> <em>May. 2025 – Aug. 2025</em></li>
+      <li><strong>Applied Scientist (Intern)</strong> <em>May 2025 – Aug. 2025</em></li>
     </ul>
   </div>
 </div>
@@ -232,7 +232,7 @@ Alignment</a>
   <div class="logo-box-text">
     <p><strong>IBM Research</strong> <i>Yorktown Heights, NY, USA</i></p>
     <ul>
-      <li><strong>Student Researcher (Part-time)</strong> <em>Jun. 2024 – May. 2025</em></li>
+      <li><strong>Student Researcher (Part-time)</strong> <em>Jun. 2024 – May 2025</em></li>
     </ul>
   </div>
 </div>
