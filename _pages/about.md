@@ -11,49 +11,40 @@ redirect_from:
 
 My name is Zheyuan (Jason) Zhang, a third-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
 
-My research focuses on post-training strategies for large language models, with an emphasis on agent harnessing and agentic RL, where the goal is to enable self-evolving, adaptive agent systems that improve their knowledge usage, coordination strategies, and model behaviors over time to dynamic and complex environments robustly and reliably. Specifically, my work spans three areas: 
+My research focuses on **LLM agent optimization**, with the goal of building adaptive agents that learn from experience and interaction to perform reliably in complex, evolving real-life environments. Specifically, my work spans three areas:
 
-*  **Retrieval-augmented Reasoning**: GraphRAG for Reasoning ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671587); [KDD'25](https://dl.acm.org/doi/pdf/10.1145/3690624.3709382); [ACL'25](https://aclanthology.org/2025.acl-long.296.pdf); [EACL'26](https://arxiv.org/pdf/2510.09854)), Long-context Reasoning ([Arxiv](https://arxiv.org/pdf/2601.02598)).
-* **Agent Harnessing**: Instruction Optimization ([EACL'26](https://arxiv.org/pdf/2510.07475); [Arxiv](https://arxiv.org/pdf/2604.05149)), Task-aware Routing ([ACL'26](https://arxiv.org/pdf/2510.05445?); [EACL'26](https://arxiv.org/pdf/2510.09854); [Arxiv](https://arxiv.org/pdf/2604.05149)), Data Collection Workflow ([NeurIPS'25](https://arxiv.org/pdf/2505.15859?)). 
-*  **Uncertainty-aware Agentic RL**: Uncertainty Quantification ([Arxiv](https://arxiv.org/pdf/2605.21801)), Uncertainty Calibraiton ([Arxiv](https://arxiv.org/pdf/2606.11512)), Intention Clarification ([ICML'26](https://arxiv.org/pdf/2602.02455)).
+<!-- Research areas: one line per area. Method names link to their papers: [Name](link) -->
+<div class="areas" markdown="1">
+
+* **Knowledge-Augmented Reasoning:** GraphRAG ([Diet-ODIN](https://arxiv.org/abs/2403.08820), [MOPI-HFRS](https://arxiv.org/abs/2412.08847), [NGQA](https://arxiv.org/abs/2412.15547)).
+* **Agent Harness Optimization:** Instruction Optimization ([MAPRO](https://arxiv.org/abs/2510.07475), [EvolveRouter](https://arxiv.org/abs/2604.05149)); Task-Aware Routing ([AgentRouter](https://arxiv.org/abs/2510.05445), [NG-Router](https://arxiv.org/abs/2510.09854), [EvolveRouter](https://arxiv.org/abs/2604.05149)).
+* **Agent Policy Optimization:** Data-Centric Reinforcement Learning ([GCPO](https://arxiv.org/abs/2605.21801), [RAIL](https://arxiv.org/abs/2608.05080)); Agentic RL with Simulated Users ([CLEAT](https://arxiv.org/abs/2610.12655), [StaGPO](https://arxiv.org/abs/2610.24294)).
+
+</div>
+
+I am specifically interested in the topics of **agent uncertainty** and **interactive intent alignment**: when agents face real users’ incomplete or misleading requests and evolving goals in long-horizon agentic tasks, how can we enable them to recognize their own uncertainty, understand the limits of their capabilities, and remain aligned with users through effective and efficient interaction, such as seeking clarification? Specifically, my work covers:
+
+<div class="areas areas--focus" markdown="1">
+
+* **Uncertainty** ([Survey](https://openreview.net/pdf?id=7NoenVN5Ly)): Quantification ([GCPO](https://arxiv.org/abs/2605.21801)); Calibration ([SAGE](https://arxiv.org/abs/2606.11512), LProp); Utilization ([GCPO](https://arxiv.org/abs/2605.21801), [RAIL](https://arxiv.org/abs/2608.05080)).
+* **Interactive Intent Alignment:** Benchmarking Intent Misalignment and Shifting ([Drift-Bench](https://arxiv.org/abs/2602.02455), [Drift-Bench++](https://arxiv.org/abs/2609.38604)); Interactive Policy Learning ([CLEAT](https://arxiv.org/abs/2610.12655), [StaGPO](https://arxiv.org/abs/2610.24294)).
+
+</div>
 
 For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf). 
 
 
-<!-- Header row: title on the left, button on the right -->
-<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
-  <h1 style="margin: 0;">🔥 News</h1>
-
-  <!-- Option B style button -->
-  <button 
-    id="news-toggle"
-    type="button"
-    style="
-      font-size: 12px; 
-      padding: 6px 12px; 
-      background-color: transparent;
-      color: #4da6ff; 
-      border: 1px solid #4da6ff; 
-      border-radius: 6px; 
-      cursor: pointer;
-      transition: 0.2s;
-    " 
-    onclick="toggleNews()"
-    onmouseover="this.style.backgroundColor='rgba(77,166,255,0.15)'"
-    onmouseout="this.style.backgroundColor='transparent'"
-  >
-    Show More
-  </button>
+<!-- News: add new items at the top of the first list, one line each:
+     <li><strong>[YYYY.MM]</strong> What happened.</li>
+     Move older items into the "news-hidden" list below (shown by Show More). -->
+<div class="section-head">
+  <h1 id="news">News</h1>
+  <button id="news-toggle" type="button" onclick="toggleNews()">Show More</button>
 </div>
 
-<!-- faint line under the header -->
-<hr style="margin: 0 0 12px 0;">
-
-<!-- visible + hidden news items -->
-<div style="padding-left: 20px; margin-bottom: 16px;">
-
+<div class="news">
   <!-- always visible items -->
-  <ul style="margin-top: 0; margin-bottom: 8px;">
+  <ul>
     <li><strong>[2026.04]</strong> Two papers are accepted to ICML 2026.</li>
     <li><strong>[2026.04]</strong> One paper is accepted to ACL 2026. See you in San Diego!</li>
     <li><strong>[2026.03]</strong> I will join ByteDance as Research Scientist Intern this July. See you in Seattle.</li>
@@ -62,9 +53,9 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
     <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
   </ul>
 
-  <!-- extra items (initially hidden) -->
-  <div id="news-hidden" style="display: none;">
-    <ul style="margin-top: 0;">
+  <!-- extra items (hidden until "Show More" is clicked) -->
+  <div id="news-hidden">
+    <ul>
       <li><strong>[2025.09]</strong> I will continue my intern at Amazon this Autumn.</li>
       <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
       <li><strong>[2025.05]</strong> Two papers are accepted to ACL.</li>
@@ -82,7 +73,6 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
       <li><strong>[2024.04]</strong> One paper is accepted by IJCAI 2024.</li>
     </ul>
   </div>
-
 </div>
 
 <!-- simple global toggle function -->
@@ -103,249 +93,219 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
     }
   }
 
-  // ensure function is available to inline onclick
+  /* ensure function is available to inline onclick */
   window.toggleNews = toggleNews;
 </script>
 
-<h1 id="selected-publications">📚 Selected Publications</h1>
+<h1 id="selected-publications">Selected Publications</h1>
 
 You can find the full list of my articles on my [Google Scholar](https://scholar.google.com/citations?user=qJURp_AAAAAJ&hl=en) profile.
 
---------------
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/GCPO.png' alt="gcpo" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/pdf/2604.05149">Why Semantic Entropy Fails: Geometry-Aware and
-Calibrated Uncertainty for Policy Optimization</a> <em>[Arxiv 26 Jun.]</em><br><br>
-
-  <strong>Zheyuan Zhang</strong>, Kaiwen Shi, Han Bao, Zehong Wang, Tianyi Ma, Yanfang Ye
+<!-- One block per paper: badge = venue, then image, title link, authors -->
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">Arxiv 26 Jun.</div><img src="images/GCPO.png" alt="gcpo"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2605.21801">Why Semantic Entropy Fails: Geometry-Aware and
+Calibrated Uncertainty for Policy Optimization</a>
+    <p><strong>Zheyuan Zhang</strong>, Kaiwen Shi, Han Bao, Zehong Wang, Tianyi Ma, Yanfang Ye</p>
+  </div>
 </div>
 
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/sage.png' alt="sage" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/pdf/2604.05149">SAGE: Answer-Conditioned Uncertainty Targets for Verbal Uncertainty
-Alignment</a> <em>[Arxiv 26 Jun.]</em><br><br>
-
-  Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Yanfang Ye
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">Arxiv 26 Jun.</div><img src="images/sage.png" alt="sage"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2606.11512">SAGE: Answer-Conditioned Uncertainty Targets for Verbal Uncertainty
+Alignment</a>
+    <p>Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Yanfang Ye</p>
+  </div>
 </div>
 
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/evolverouter.png' alt="evolverouter" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/pdf/2604.05149">EvolveRouter: Co-Evolving Routing and Prompt for Multi-
-Agent Question Answering</a> <em>[Arxiv 26 Apr.]</em><br><br>
-
-  Jiatan Huang*, <strong>Zheyuan Zhang</strong>*, Kaiwen Shi, Yanfang Ye, Chuxu Zhang
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">Arxiv 26 Apr.</div><img src="images/evolverouter.png" alt="evolverouter"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/pdf/2604.05149">EvolveRouter: Co-Evolving Routing and Prompt for Multi-
+Agent Question Answering</a>
+    <p>Jiatan Huang*, <strong>Zheyuan Zhang</strong>*, Kaiwen Shi, Yanfang Ye, Chuxu Zhang</p>
+  </div>
 </div>
 
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/agentrouter.png' alt="agentrouter" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2510.05445">AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</a> <em>[ACL'26 Main]</em><br><br>
-
-  <strong>Zheyuan Zhang</strong>*, Kaiwen Shi*, Zhengqing Yuan,  
-  Zehong Wang, Tianyi Ma, Keerthiram Murugesan,  
-  Vincent Galassi, Chuxu Zhang, Yanfang Ye
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">ACL'26 Main</div><img src="images/agentrouter.png" alt="agentrouter"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2510.05445">AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</a>
+    <p><strong>Zheyuan Zhang</strong>*, Kaiwen Shi*, Zhengqing Yuan, Zehong Wang, Tianyi Ma, Keerthiram Murugesan, Vincent Galassi, Chuxu Zhang, Yanfang Ye</p>
+  </div>
 </div>
 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/mapro.png' alt="mapro" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2510.07475">MAPRO: Recasting Multi-Agent Prompt Optimization as Maximum a Posteriori Inference</a> <em>[EACL'26 Findings]</em><br><br>
-
-  <strong>Zheyuan Zhang</strong>, Lin Ge, Hongjiang Li, Weicheng Zhu, Chuxu Zhang, Yanfang Ye
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">EACL'26 Findings</div><img src="images/mapro.png" alt="mapro"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2510.07475">MAPRO: Recasting Multi-Agent Prompt Optimization as Maximum a Posteriori Inference</a>
+    <p><strong>Zheyuan Zhang</strong>, Lin Ge, Hongjiang Li, Weicheng Zhu, Chuxu Zhang, Yanfang Ye</p>
+  </div>
 </div>
 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/ngrouter.png' alt="ngrouter" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2510.09854">NG-Router: Graph-Supervised Multi-Agent Collaboration for Nutrition Question Answering</a> <em>[EACL'26 Main]</em><br><br>
-
-  Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Zhengqing Yuan, 
-  Keerthiram Murugesan, Vincent Galass, Chuxu Zhang, Yanfang Ye
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">EACL'26 Main</div><img src="images/ngrouter.png" alt="ngrouter"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2510.09854">NG-Router: Graph-Supervised Multi-Agent Collaboration for Nutrition Question Answering</a>
+    <p>Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Zhengqing Yuan, Keerthiram Murugesan, Vincent Galass, Chuxu Zhang, Yanfang Ye</p>
+  </div>
 </div>
 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/ngqa.png' alt="ngqa" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2412.15547">NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning</a> <em>[ACL'25 Main]</em><br><br>
-
-  <strong>Zheyuan Zhang</strong>*, Yiyang Li*, Nhi Ha Lan Le*, Zehong Wang, 
-  Tianyi Ma, Vincent Galassi, Keerthiram Murugesan, Nuno Moniz, Werner Geyer, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">ACL'25 Main</div><img src="images/ngqa.png" alt="ngqa"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2412.15547">NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning</a>
+    <p><strong>Zheyuan Zhang</strong>*, Yiyang Li*, Nhi Ha Lan Le*, Zehong Wang, Tianyi Ma, Vincent Galassi, Keerthiram Murugesan, Nuno Moniz, Werner Geyer, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye</p>
+  </div>
 </div>
 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/mopi.png' alt="mopi" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2412.08847">MOPI-HFRS: A Multi-objective Personalized Health-aware Food Recommendation System with LLM-enhanced Interpretation</a> <em>[KDD'25]</em><br><br>
-
-  <strong>Zheyuan Zhang</strong>, Zehong Wang, Tianyi Ma, Varun Sameer Taneja, 
-  Sofia Nelson, Nhi Ha Lan Le, Keerthiram Murugesan, Mingxuan Ju, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">KDD'25</div><img src="images/mopi.png" alt="mopi"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2412.08847">MOPI-HFRS: A Multi-objective Personalized Health-aware Food Recommendation System with LLM-enhanced Interpretation</a>
+    <p><strong>Zheyuan Zhang</strong>, Zehong Wang, Tianyi Ma, Varun Sameer Taneja, Sofia Nelson, Nhi Ha Lan Le, Keerthiram Murugesan, Mingxuan Ju, Nitesh V Chawla, Chuxu Zhang, Yanfang Ye</p>
+  </div>
 </div>
 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/diet.png' alt="diet" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<div style="font-size: 0.9rem; line-height: 1.35;">
-  <!-- all your publication text here -->
-  <a href="https://arxiv.org/abs/2403.08820">Diet-ODIN: A Novel Framework for Opioid Misuse Detection with Interpretable Dietary Patterns</a> <em>[KDD'24]</em><br><br>
-
-  <strong>Zheyuan Zhang</strong>*, Zehong Wang*, Shifu Hou, Evan Hall, Landon Bachman, 
-  Vincent Galassi, Jasmine White, Nitesh V. Chawla, Chuxu Zhang, Yanfang Ye
-</div>
-
-</div>
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">KDD'24</div><img src="images/diet.png" alt="diet"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2403.08820">Diet-ODIN: A Novel Framework for Opioid Misuse Detection with Interpretable Dietary Patterns</a>
+    <p><strong>Zheyuan Zhang</strong>*, Zehong Wang*, Shifu Hou, Evan Hall, Landon Bachman, Vincent Galassi, Jasmine White, Nitesh V. Chawla, Chuxu Zhang, Yanfang Ye</p>
+  </div>
 </div>
 
 
-<div style="height: 40px;"></div>
-<h1 id="work-experience">💻 Work Experience</h1>
---------------
-<div class='logo-box'><div class='logo-box-image'><div><img src='images/bytedance.webp' alt="bytedance" width="100%"></div></div>
-<div class='logo-box-text' markdown="1">
+<h1 id="work-experience">Work Experience</h1>
 
-**ByteDance**,   <i>Seattle, WA, USA</i>  
-
-* *Jul. 2026 – Oct. 2026*, **Research Scientist (Intern)**   
-
-</div>
-</div>
-
-<div class='logo-box'><div class='logo-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
-<div class='logo-box-text' markdown="1">
-
-**Amazon Science**,   <i>Seattle, WA, USA</i>  
-
-* *Apr. 2026 – Jul. 2026*, **Applied Scientist (Intern)**   
-
-</div>
+<!-- One block per employer: logo, company + location, then one line per role -->
+<div class="logo-box">
+  <img src="images/logo-bytedance.png" alt="bytedance">
+  <div class="logo-box-text">
+    <p><strong>ByteDance</strong> <i>Seattle, WA, USA</i></p>
+    <ul>
+      <li><strong>Research Scientist (Intern)</strong> <em>Jul. 2026 – Oct. 2026</em></li>
+    </ul>
+  </div>
 </div>
 
-<div class='logo-box'><div class='logo-box-image'><div><img src='images/amazon.webp' alt="amazon" width="100%"></div></div>
-<div class='logo-box-text' markdown="1">
-
-**Amazon Science**,   <i>Seattle, WA, USA</i>  
-
-* *Aug. 2025 – Dec. 2025*, **Applied Scientist (Part-time)**  
-* *May. 2025 – Aug. 2025*, **Applied Scientist (Intern)**    
-
-</div>
-</div>
-
-<div class='logo-box'><div class='logo-box-image'><div><img src='images/ibm.webp' alt="ibm" width="100%"></div></div>
-<div class='logo-box-text' markdown="1">
-
-**IBM Research**,   <i>Yorktown Heights, NY, USA</i>  
-
-* *Jun. 2024 – May. 2025*, **Student Researcher (Part-time)**   
-
-</div>
+<div class="logo-box">
+  <img src="images/logo-amazon.png" alt="amazon">
+  <div class="logo-box-text">
+    <p><strong>Amazon Science</strong> <i>Seattle, WA, USA</i></p>
+    <ul>
+      <li><strong>Applied Scientist (Intern)</strong> <em>Apr. 2026 – Jul. 2026</em></li>
+    </ul>
+  </div>
 </div>
 
-
-<div class='logo-box'><div class='logo-box-image'><div><img src='images/coleridge.avif' alt="coleridge" width="100%"></div></div>
-<div class='logo-box-text' markdown="1">
-
-**Coleridge Initiative**,   <i>New York, NY, USA</i>  
-
-* *Oct. 2021 – Mar. 2023*, **Research Scientist**  
-* *Aug. 2020 – Oct. 2021*, **Associated Research Scientist**   
-* *Oct. 2019 – Aug. 2020*, **Junior Research Scientist (Intern)**  
-
-</div>
+<div class="logo-box">
+  <img src="images/logo-amazon.png" alt="amazon">
+  <div class="logo-box-text">
+    <p><strong>Amazon Science</strong> <i>Seattle, WA, USA</i></p>
+    <ul>
+      <li><strong>Applied Scientist (Part-time)</strong> <em>Aug. 2025 – Dec. 2025</em></li>
+      <li><strong>Applied Scientist (Intern)</strong> <em>May. 2025 – Aug. 2025</em></li>
+    </ul>
+  </div>
 </div>
 
-<div style="height: 40px;"></div>
+<div class="logo-box">
+  <img src="images/logo-ibm.png" alt="ibm">
+  <div class="logo-box-text">
+    <p><strong>IBM Research</strong> <i>Yorktown Heights, NY, USA</i></p>
+    <ul>
+      <li><strong>Student Researcher (Part-time)</strong> <em>Jun. 2024 – May. 2025</em></li>
+    </ul>
+  </div>
+</div>
 
-<h1 id="education">📖 Education</h1>
---------------
-* <i>2023.07 - present</i>, Ph.D., University of Notre Dame
-* <i>2019.08 - 2020.08</i>, M.S., New York University
-* <i>2015.09 - 2019.06</i>, B.S., Wuhan University
+<div class="logo-box">
+  <img src="images/logo-coleridge.png" alt="coleridge">
+  <div class="logo-box-text">
+    <p><strong>Coleridge Initiative</strong> <i>New York, NY, USA</i></p>
+    <ul>
+      <li><strong>Research Scientist</strong> <em>Oct. 2021 – Mar. 2023</em></li>
+      <li><strong>Associated Research Scientist</strong> <em>Aug. 2020 – Oct. 2021</em></li>
+      <li><strong>Junior Research Scientist (Intern)</strong> <em>Oct. 2019 – Aug. 2020</em></li>
+    </ul>
+  </div>
+</div>
 
 
-<h1 id="mentorship">📝 Mentorship</h1>
---------------
+<h1 id="education">Education</h1>
+
+<!-- One line per degree:  * <i>dates</i> **Degree** School -->
+<div class="dated edu" markdown="1">
+
+* <i>2023.07 - present</i> **Ph.D.** University of Notre Dame
+* <i>2019.08 - 2020.08</i> **M.S.** New York University
+* <i>2015.09 - 2019.06</i> **B.S.** Wuhan University
+
+</div>
+
+
+<h1 id="mentorship">Mentorship</h1>
+
 I've been fortunate to mentor and work alongside many brilliant minds:
-### **Current Mentees**
 
-- **[Han Bao](https://wad3birch.github.io/)**, Ph.D. Student, University of Notre Dame (Sept. 2025 – present)
-- **[Jiatan Huang](https://j-huang01.github.io/)**, Ph.D. Student, University of Connecticut (Aug. 2025 - present)
-- **[Kaiwen Shi](https://scholar.google.com/citations?user=2SUGJDcAAAAJ&hl=zh-CN)**, Ph.D. Student, University of Notre Dame (Mar. 2025 - present)
-- **[Xiaoyu Ma](https://www.linkedin.com/in/xiaoyu-ma-29b8ba337/?originalSubdomain=sg)**, M.S. Student, National University of Singapore (Oct. 2025 – present)
-  
+<!-- One line per mentee:  - **[Name](link)** Role, School <i>dates</i> -->
+<div class="people" markdown="1">
 
-### **Former Mentees**
+### Current Mentees
 
-- **[Nhi Le](https://www.linkedin.com/in/nhi-hl-le/)**, M.S. Student, Brandeis University (Jun. 2024 – Jan. 2025)  
-- **[Vinny Galassi](https://www.linkedin.com/in/vincent-galassi/)**, Junior Undergraduate, University of Notre Dame (2023 – 2025)
-- **[Sofia Nelson](https://www.linkedin.com/in/sofia-nelson-7a5882273/)**, Senior Undergraduate, University of Notre Dame (2024)
-- **[Varun Taneja](https://www.linkedin.com/in/varuntaneja7/)**, Senior Undergraduate, University of Notre Dame (2024)
-- **[Evan Hall](https://www.linkedin.com/in/evan-hall-703b341a3/)**, Senior Undergraduate, University of Notre Dame (2023 – 2024)  
-- **[Landon Bachman](https://www.linkedin.com/in/landon-bachman-983740203/)**, Senior Undergraduate, University of Notre Dame (2023 – 2024)  
-- **[Jasmine White](https://www.linkedin.com/in/jasmine-white-13b46021b/)**, Senior Undergraduate, Purdue University (2023 – 2024)  
+- **[Han Bao](https://wad3birch.github.io/)** Ph.D. Student, University of Notre Dame <i>Sept. 2025 – present</i>
+- **[Jiatan Huang](https://j-huang01.github.io/)** Ph.D. Student, University of Connecticut <i>Aug. 2025 - present</i>
+- **[Kaiwen Shi](https://scholar.google.com/citations?user=2SUGJDcAAAAJ&hl=zh-CN)** Ph.D. Student, University of Notre Dame <i>Mar. 2025 - present</i>
+- **[Xiaoyu Ma](https://www.linkedin.com/in/xiaoyu-ma-29b8ba337/?originalSubdomain=sg)** M.S. Student, National University of Singapore <i>Oct. 2025 – present</i>
+
+### Former Mentees
+
+- **[Nhi Le](https://www.linkedin.com/in/nhi-hl-le/)** M.S. Student, Brandeis University <i>Jun. 2024 – Jan. 2025</i>
+- **[Vinny Galassi](https://www.linkedin.com/in/vincent-galassi/)** Junior Undergraduate, University of Notre Dame <i>2023 – 2025</i>
+- **[Sofia Nelson](https://www.linkedin.com/in/sofia-nelson-7a5882273/)** Senior Undergraduate, University of Notre Dame <i>2024</i>
+- **[Varun Taneja](https://www.linkedin.com/in/varuntaneja7/)** Senior Undergraduate, University of Notre Dame <i>2024</i>
+- **[Evan Hall](https://www.linkedin.com/in/evan-hall-703b341a3/)** Senior Undergraduate, University of Notre Dame <i>2023 – 2024</i>
+- **[Landon Bachman](https://www.linkedin.com/in/landon-bachman-983740203/)** Senior Undergraduate, University of Notre Dame <i>2023 – 2024</i>
+- **[Jasmine White](https://www.linkedin.com/in/jasmine-white-13b46021b/)** Senior Undergraduate, Purdue University <i>2023 – 2024</i>
+
+</div>
 
 
-# 💬 Services
---------------
-* **Conference Senior Area Chair**: KDD’26
-* **Conference Reviewer**: NeurIPS'26, ICML'26, ICLR’26, KDD’26, KDD’25, WWW’25
-* **Journal Reviewer**: Transactions on Big Data, DMKD, TIST, TMLR, TWEB
-* **Teaching Assistant**: FA23-CSE-40113, SP24-CSE-40113: Design/Analysis of Algorithms
+<h1 id="services">Services</h1>
 
-# 💬 Invited Talks
---------------
-* **MOPI-HFRS** (Sept. 2024) @ IBM Research, Thomas J. Watson Research Center, Yorktown Heights.
-* **LLM Agents for Code Generation** (Jun. 2025) @ Amazon, Seattle.
+<!-- One line per item:  * **Label** value -->
+<div class="kv" markdown="1">
 
-# 📢 Contact
---------------
-* Email: zzhang42 [at] nd [dot] edu
-* Office: 247B Fitzpatrick Hall of Engineering
-* Location: University of Notre Dame, Notre Dame, IN 46565
+* **Conference Senior Area Chair** KDD’26
+* **Conference Reviewer** NeurIPS'26, ICML'26, ICLR’26, KDD’26, KDD’25, WWW’25
+* **Journal Reviewer** Transactions on Big Data, DMKD, TIST, TMLR, TWEB
+* **Teaching Assistant** FA23-CSE-40113, SP24-CSE-40113: Design/Analysis of Algorithms
+
+</div>
+
+
+<h1 id="invited-talks">Invited Talks</h1>
+
+<!-- One line per talk:  * <i>date</i> **Title** @ where -->
+<div class="dated talks" markdown="1">
+
+* <i>Sept. 2024</i> **MOPI-HFRS** @ IBM Research, Thomas J. Watson Research Center, Yorktown Heights.
+* <i>Jun. 2025</i> **LLM Agents for Code Generation** @ Amazon, Seattle.
+
+</div>
+
+
+<h1 id="contact">Contact</h1>
+
+<div class="kv" markdown="1">
+
+* **Email** zzhang42 [at] nd [dot] edu
+* **Office** 247B Fitzpatrick Hall of Engineering
+* **Location** University of Notre Dame, Notre Dame, IN 46565
+
+</div>
 
 Feel free to reach out via email if you’re interested in our research or potential collaborations. 

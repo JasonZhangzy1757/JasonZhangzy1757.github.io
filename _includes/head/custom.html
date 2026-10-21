@@ -21,9 +21,32 @@
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="{{ base_path }}/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#0c2340">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
+<!-- Web fonts: Inter (text), Inter Tight (headings), JetBrains Mono (dates, venue tags) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- loaded without blocking the first paint (the system font shows until the web fonts arrive,
+     and the page still renders where Google Fonts is slow or blocked) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..700;1,400..700&family=Inter+Tight:wght@500..800&family=JetBrains+Mono:wght@400..600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..700;1,400..700&family=Inter+Tight:wght@500..800&family=JetBrains+Mono:wght@400..600&display=swap"></noscript>
+
+
+<!-- Theme: dark ("midnight") by default, light ("mist") once a visitor picks it with the
+     masthead switch (remembered in localStorage). ?theme=light / ?theme=dark previews one
+     without saving. Runs before first paint, so there is no flash of the other theme. -->
+<script>
+  (function () {
+    var theme = null;
+    var forced = /[?&]theme=(light|dark)\b/.exec(location.search);
+    try { theme = forced ? forced[1] : localStorage.getItem('theme'); } catch (e) {}
+    document.documentElement.setAttribute('data-bg', theme === 'light' ? 'mist' : 'midnight');
+  })();
+</script>
+<!-- Dot-matrix background (canvas) and the light / dark switch -->
+<script src="{{ base_path }}/assets/js/dotgrid.js" defer></script>
+<script src="{{ base_path }}/assets/js/theme.js" defer></script>
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>

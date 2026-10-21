@@ -12,6 +12,54 @@
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
+
+/* --------------------------------------------------------------------------
+   Theme overrides (navy, modern lab)
+   -------------------------------------------------------------------------- */
+
+/* palette */
+$navy-950       : #08172d;
+$navy-900       : #0c2340;   // Notre Dame navy, the brand color
+$navy-800       : #12305a;
+$navy-700       : #1b406f;
+$navy-600       : #2a5592;
+$navy-200       : #ccd8e9;
+$navy-100       : #e2e9f3;
+$navy-50        : #f3f6fb;
+$ink            : #1c2533;   // body text
+$ink-2          : #3a4455;   // secondary text
+$muted          : #5b6576;   // meta text (5.8:1 on white)
+$line           : #e3e8ef;   // hairlines
+$accent         : #8db8ff;   // highlights on navy
+$focus          : #2f6fe4;
+
+/* type */
+$sans-serif         : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$sans-serif-narrow  : $sans-serif;
+$display            : "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$monospace          : "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+$global-font-family : $sans-serif;
+$header-font-family : $display;
+
+/* colors used by the theme partials */
+$text-color                 : $ink;
+$primary-color              : $navy-900;
+$border-color               : $line;
+$link-color                 : $navy-700;
+$link-color-hover           : $navy-900;
+$link-color-visited         : $navy-700;
+$masthead-link-color        : rgba(255, 255, 255, 0.74);
+$masthead-link-color-hover  : #fff;
+$masthead-height            : 64px;
+
+/* layout */
+$site-max       : 1240px;
+$side-w         : 240px;   // sidebar width, 925px and up
+$side-w-lg      : 264px;   // 1024px and up (fixed sidebar)
+$side-w-xl      : 288px;   // 1280px and up
+$side-gap       : 56px;
+$jump-gap       : 18px;    // nav jumps stop 65px below a heading's box; this keeps its rule clear of the 64px masthead
+
 @import "mixins";
 @import "vendor/susy/susy";
 
@@ -41,109 +89,1516 @@
 @import "print";
 
 
-.logo-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    border-bottom: 1px #efefef solid;
-    padding: 1.5em 0;
+/* ==========================================================================
+   Color tokens. Two themes, picked with data-bg on <html> before first paint
+   (see _includes/head/custom.html): "midnight" (default) and "mist" (light).
+   :root holds a plain white fallback for visitors without JavaScript.
+   ========================================================================== */
+
+:root {
+  --page: #ffffff;
+  --page-glow: none;
+  --surface: #ffffff;        // cards: profile, papers
+  --plate: #ffffff;          // the "paper" sheet behind a figure
+  --plate-shadow: 0 0 0 1px rgba(12, 35, 64, 0.07), 0 8px 18px -12px rgba(12, 35, 64, 0.28);
+  --tile: #ffffff;           // behind logos
+  --line: #e3e8ef;
+  --line-soft: #edf1f6;
+  --line-strong: #ccd8e9;
+  --ink: #{$ink};
+  --ink-2: #{$ink-2};
+  --muted: #{$muted};
+  --title: #{$navy-900};
+  --link: #{$navy-700};
+  --link-line: rgba(27, 64, 111, 0.32);
+  --date: #{$navy-600};
+  --chip-fg: #{$navy-700};
+  --chip-bg: #{$navy-50};
+  --chip-line: #{$navy-100};
+  --venue-bg: #{$navy-900};    // venue tab on paper figures
+  --venue-fg: #ffffff;
+  --venue-ring: transparent;
+  --fill-bg: #{$navy-900};     // hover / active fill of chips and buttons
+  --fill-fg: #ffffff;
+  --fill-line: #{$navy-900};
+  --rule: #{$navy-900};
+  --focus: #{$focus};
+  --focus-ring: rgba(47, 111, 228, 0.22);
+  --shadow-xs: 0 1px 2px rgba(12, 35, 64, 0.05);
+  --shadow-card: 0 1px 2px rgba(12, 35, 64, 0.06), 0 18px 36px -28px rgba(12, 35, 64, 0.35);
+  --shadow-hover: 0 22px 40px -28px rgba(12, 35, 64, 0.5), 0 2px 6px -2px rgba(12, 35, 64, 0.06);
+  --cover:
+    radial-gradient(rgba(255, 255, 255, 0.16) 1px, rgba(255, 255, 255, 0) 1.5px) 0 0 / 12px 12px,
+    radial-gradient(200px 110px at 85% 0%, rgba(79, 143, 247, 0.55), rgba(79, 143, 247, 0) 70%),
+    linear-gradient(135deg, #0c2340 0%, #163a73 60%, #1f4fa6 100%);
 }
 
-/* LEFT — IMAGE */
-.logo-box .logo-box-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 160px;       /* smaller image */
-    max-width: 22%;         /* tighten width so text gets more room */
-    margin-right: 1.5em;    /* spacing between image & text */
+/* light theme: cool light gray page, white cards sit on it as surfaces */
+html[data-bg="mist"] {
+  --page: #f4f6fa;
+  --line: #d9dfe9;
+  --line-soft: #e6eaf1;
+  --muted: #545e6f;
+  --date: #264f8a;
+  --chip-bg: #e9eef6;
 }
 
-.logo-box .logo-box-image img {
-    width: 100%;
+/* dark theme (default): deep navy. Screen only, so printing always uses the light tokens. */
+@media screen {
+  html[data-bg="midnight"] {
+    color-scheme: dark;
+    --page: #0a1628;
+    --page-glow: radial-gradient(860px 480px at calc(50% + 360px) 40px, rgba(79, 143, 247, 0.12), rgba(79, 143, 247, 0) 70%);
+    --surface: #112442;
+    --plate: #eef0f3;          // figures keep a paper sheet, dimmed a little to cut glare
+    --plate-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 16px 30px -18px rgba(0, 0, 0, 0.75);
+    --tile: #ffffff;           // dimmed together with the logo by the filter below, so white logo boxes blend in
+    --line: rgba(148, 179, 222, 0.16);
+    --line-soft: rgba(148, 179, 222, 0.10);
+    --line-strong: rgba(148, 179, 222, 0.32);
+    --ink: #d6dfec;
+    --ink-2: #b2bfd3;
+    --muted: #8d9bb3;
+    --title: #f3f7fd;
+    --link: #9cc2ff;
+    --link-line: rgba(156, 194, 255, 0.35);
+    --date: #8db8ff;
+    --chip-fg: #bcd5ff;
+    --chip-bg: rgba(141, 184, 255, 0.08);
+    --chip-line: rgba(141, 184, 255, 0.22);
+    --venue-bg: rgba(8, 23, 45, 0.86);
+    --venue-fg: #cfe0ff;
+    --venue-ring: rgba(141, 184, 255, 0.3);
+    --fill-bg: rgba(141, 184, 255, 0.16);
+    --fill-fg: #eef4ff;
+    --fill-line: rgba(141, 184, 255, 0.55);
+    --rule: #8db8ff;
+    --focus: #8db8ff;
+    /* cover band: the same dark material, lit from the top right, dots in the dot-matrix color */
+    --cover:
+      radial-gradient(rgba(141, 184, 255, 0.22) 1px, rgba(141, 184, 255, 0) 1.4px) 0 0 / 12px 12px,
+      radial-gradient(240px 140px at 82% 0%, rgba(79, 143, 247, 0.34), rgba(79, 143, 247, 0) 70%),
+      linear-gradient(160deg, #143563 0%, #112a50 45%, #112442 100%);
+    --focus-ring: rgba(141, 184, 255, 0.3);
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 18px 36px -24px rgba(0, 0, 0, 0.6);
+    --shadow-hover: 0 22px 44px -26px rgba(0, 0, 0, 0.7), 0 2px 6px -2px rgba(0, 0, 0, 0.3);
+  }
+
+  html[data-bg="midnight"] {
+    ::selection { color: #fff; background: rgba(141, 184, 255, 0.35); }
+
+    .masthead { box-shadow: inset 0 -1px 0 rgba(141, 184, 255, 0.4), 0 1px 0 rgba(0, 0, 0, 0.4); }
+
+    .paper-box-image img { filter: brightness(0.94); }
+    .logo-box > img { filter: brightness(0.92); }
+
+    #about-me + p { color: var(--ink); }
+
+    /* profile card: the cover band dissolves into the card instead of ending in a hard edge */
+    .sidebar [itemtype$="Person"]:before {
+      height: 136px;
+      -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 40%, rgba(0, 0, 0, 0) 100%);
+              mask-image: linear-gradient(180deg, #000 0%, #000 40%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .sidebar .author__avatar img {
+      box-shadow: 0 0 0 1px rgba(141, 184, 255, 0.35), 0 14px 30px -14px rgba(0, 0, 0, 0.75);
+    }
+
+    /* a faint top highlight makes the dark cards read as surfaces */
+    .sidebar [itemtype$="Person"],
+    .paper-box {
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), var(--shadow-card);
+    }
+  }
+
+  /* hover / focus shadows have to beat the dark card shadow above */
+  html[data-bg="midnight"] .paper-box:hover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), var(--shadow-hover);
+  }
+
+  html[data-bg="midnight"] .paper-box:focus-within {
+    box-shadow: 0 0 0 3px var(--focus-ring);
+  }
+
+  /* the theme's sample pages (sitemap, markdown guide, posts) */
+  html[data-bg="midnight"] {
+    code,
+    pre,
+    kbd {
+      color: var(--ink);
+      background: rgba(141, 184, 255, 0.08);
+      border-color: var(--line);
+    }
+
+    th,
+    td { border-color: var(--line); }
+
+    th { background: rgba(141, 184, 255, 0.06); }
+
+    .notice,
+    .notice--primary,
+    .notice--info,
+    .notice--warning,
+    .notice--success,
+    .notice--danger {
+      color: var(--ink);
+      background: rgba(141, 184, 255, 0.08);
+    }
+
+    .toc {
+      background: var(--surface);
+      border-color: var(--line);
+    }
+  }
+}
+
+/* both themes print as the light one */
+@media print {
+  html,
+  body { background: #fff !important; }
+
+  html[data-bg] {
+    --page: #fff;
+    --page-glow: none;
+    --surface: #fff;
+    --plate: #fff;
+    --tile: #fff;
+    --ink: #{$ink};
+    --ink-2: #{$ink-2};
+    --muted: #{$muted};
+    --title: #{$navy-900};
+    --link: #{$navy-700};
+    --date: #{$navy-600};
+    --rule: #{$navy-900};
+    --venue-bg: #{$navy-900};
+    --venue-fg: #fff;
+  }
+
+  #fx-canvas,
+  .theme-toggle,
+  #news-toggle,
+  .author__urls-wrapper > button { display: none !important; }
+
+  .badge {
+    color: #{$navy-900} !important;
+    background: none !important;
+    box-shadow: inset 0 0 0 1px #{$navy-900} !important;
+  }
+
+  .paper-box,
+  .logo-box,
+  .people li,
+  .dated li,
+  .kv li,
+  .news li,
+  .areas > ul > li { break-inside: avoid; }
+
+  .page__content > h1,
+  .section-head,
+  .people h3 { break-after: avoid; }
+}
+
+/* Windows contrast themes: keep figures and logos on their light plates */
+@media (forced-colors: active) {
+  #fx-canvas { display: none; }
+
+  .paper-box .paper-box-image img { mix-blend-mode: normal; }   // must outrank the base rule further down
+
+  .paper-box-image,
+  .logo-box > img { forced-color-adjust: none; }
+}
+
+
+/* ==========================================================================
+   Global type
+   ========================================================================== */
+
+html {
+  font-size: 16px;
+  background-color: var(--page);   // the floated footer sits outside <body>; keep its margin on the page color
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  @include breakpoint($medium) {
+    font-size: 17px;
+  }
+}
+
+body {
+  padding-bottom: 0;
+  color: var(--ink);
+  background-color: var(--page);
+  background-image: var(--page-glow);
+  background-repeat: no-repeat;
+}
+
+::-moz-selection { color: #fff; background: $navy-900; }
+::selection { color: #fff; background: $navy-900; }
+
+/* base link color for both themes (the theme's own rule is a fixed navy) */
+a { color: var(--link); }
+
+a:focus { outline: none; }
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* optional animated background (see assets/js) */
+#fx-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#main,
+.page__footer {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ==========================================================================
+   Masthead: deep navy bar
+   ========================================================================== */
+
+.masthead {
+  background: $navy-900;
+  background: linear-gradient(90deg, $navy-950 0%, $navy-900 48%, #10305a 100%);
+  border-bottom: 0;
+  /* faint azure hairline along the bottom edge */
+  box-shadow: inset 0 -1px 0 rgba(141, 184, 255, 0.22), 0 1px 2px rgba(8, 23, 45, 0.12);
+}
+
+.masthead__inner-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: $site-max;
+  padding: 0 20px;
+
+  @include breakpoint($x-large) { max-width: $site-max; }
+  @media screen and (min-width: 1024px) { padding: 0 32px; }
+}
+
+.masthead__menu {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.masthead__menu-item--lg {
+  position: relative;
+  padding-right: 1.9em;
+
+  /* divider between the site name and the nav links (phones fold the links into the menu) */
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.7em;
+    width: 1px;
+    height: 18px;
+    margin-top: -9px;
+    background: rgba(255, 255, 255, 0.18);
+
+    @media (max-width: 767px) { display: none; }
+  }
+}
+
+.greedy-nav {
+  min-width: 0;   // lets the nav shrink on 320px phones so the menu button stops before the theme switch
+  background: transparent;
+
+  a {
+    margin: 0 0.9rem;
+    padding: 0.45rem 0;
+    color: $masthead-link-color;
+    font-size: 0.86rem;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+
+    &:hover { color: #fff; }
+  }
+
+  .visible-links {
+    li:first-child a {
+      color: #fff;
+      font-family: $display;
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+
+      &:before { display: none; }
+    }
+
+    a:before {
+      bottom: -1px;
+      height: 2px;
+      border-radius: 2px;
+      background: $accent;
+    }
+  }
+
+  button {
+    top: 50%;
+    height: 38px;
+    width: 42px;
+    margin-top: -19px;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+  }
+
+  .navicon,
+  .navicon:before,
+  .navicon:after {
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+  }
+
+  .navicon:before { top: -6px; }
+  .navicon:after { bottom: -6px; }
+  .close .navicon:before,
+  .close .navicon:after { top: 0; width: 18px; }
+
+  .hidden-links {
+    margin-top: 12px;
+    padding: 6px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow-hover);
+
+    /* the little caret above the menu follows the theme */
+    &:before { border-color: var(--line) transparent; }
+    &:after { border-color: var(--surface) transparent; }
+
+    li { border-bottom: 0; }
+
+    a {
+      padding: 9px 16px;
+      border-radius: 8px;
+      color: var(--ink-2);
+      font-size: 0.9rem;
+
+      &:hover {
+        color: var(--title);
+        background: var(--chip-bg);
+      }
+    }
+  }
+}
+
+/* Phones: the site name must fit beside the menu and theme buttons, otherwise the
+   theme's greedy-nav script recurses forever trying to make room for it. */
+@media (max-width: 767px) {
+  .masthead__menu-item--lg { padding-right: 0; }
+  .greedy-nav .visible-links li:first-child a { margin-left: 0; margin-right: 0.4rem; }
+}
+
+@media (max-width: 359px) {
+  .greedy-nav .visible-links li:first-child a { font-size: 0.94rem; }
+}
+
+/* light / dark switch at the right end of the masthead */
+.theme-toggle {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 12px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.32);
+  }
+
+  &:focus-visible { border-radius: 10px; }
+
+  svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  /* show the sun on the dark theme (switch to light) and the moon on the light one */
+  .theme-toggle__moon { display: none; }
+}
+
+html[data-bg="mist"] .theme-toggle {
+  .theme-toggle__sun { display: none; }
+  .theme-toggle__moon { display: block; }
+}
+
+/* without JavaScript the page stays on the plain light fallback and the switch can't work */
+html.no-js .theme-toggle { display: none; }
+
+/* The theme's greedy-nav script can leave items parked in the overflow menu after a
+   window resize (it restores only one item per resize event). From 1024px up all the
+   nav items fit, so keep them inline. If you add nav items, check the bar at 1024px. */
+@media screen and (min-width: 1024px) {
+  .greedy-nav {
+    .visible-links,
+    .hidden-links {
+      display: inline-table !important;
+      vertical-align: middle;
+    }
+
+    .hidden-links {
+      position: static;
+      margin: 0;
+      padding: 0;
+      visibility: visible !important;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+
+      &:before,
+      &:after { display: none; }
+
+      li {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      a {
+        margin: 0 0.9rem;
+        padding: 0.45rem 0;
+        color: $masthead-link-color;
+        font-size: 0.86rem;
+        border-radius: 0;
+
+        &:hover {
+          color: #fff;
+          background: transparent;
+        }
+      }
+    }
+
+    button { display: none !important; }
+  }
+}
+
+
+/* ==========================================================================
+   Page grid: wider content column, no empty band on the right
+   ========================================================================== */
+
+#main {
+  max-width: $site-max;
+  margin-top: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include breakpoint($x-large) { max-width: $site-max; }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@include breakpoint($large) {
+  .sidebar {
+    top: $masthead-height + 24px;   // the theme's sticky offset (2em) slid the card under the masthead
+    width: $side-w;
+    margin-right: 0;
+  }
+
+  .page,
+  .archive {
+    width: calc(100% - #{$side-w + 40px});
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* From 1024px the theme pins the sidebar with position: fixed, which lets the footer slide
+   over the card on short screens. Sticky keeps it in the page flow, so the footer always
+   lands below it. */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: $masthead-height + 40px;
+    width: $side-w-lg;
     height: auto;
-    object-fit: contain;
-    box-shadow: none;       /* remove black-looking frame */
-    border: none;           /* ensure no default border */
+    max-height: calc(100vh - #{$masthead-height + 40px});
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  .page,
+  .archive {
+    width: calc(100% - #{$side-w-lg + $side-gap});
+  }
 }
 
-/* RIGHT — TEXT */
-.logo-box .logo-box-text {
-    flex: 1;               /* text takes remaining width */
-    max-width: 75%;
+@include breakpoint($x-large) {
+  .sidebar {
+    width: $side-w-xl;
+    max-width: none;
+  }
+
+  .page,
+  .archive {
+    width: calc(100% - #{$side-w-xl + $side-gap});
+  }
+}
+
+/* the home page has an empty title: drop its header */
+.page__inner-wrap:has(#about-me) > header { display: none; }
+
+
+/* ==========================================================================
+   Sidebar: profile card with a navy cover band
+   ========================================================================== */
+
+.sidebar {
+  z-index: 15;          // keeps the "Follow" popover above the positioned section titles
+  margin-bottom: 2.4rem;
+
+  @include breakpoint($large) { margin-bottom: 1em; }
+}
+
+@media screen and (max-width: 924px) {
+  .sidebar { position: relative; }   // sticky / fixed take over from 925px up
+}
+
+/* phones and tablets: a compact header card */
+.sidebar [itemtype$="Person"] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+
+  > * { position: relative; }
+
+  /* desktop: tall card, cover band behind a large avatar */
+  @include breakpoint($large) {
+    display: block;
+    overflow: hidden;
+    padding: 0 22px 16px;
+    border-radius: 18px;
+    text-align: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 104px;
+      background: var(--cover);
+    }
+  }
+}
+
+.sidebar .author__avatar {
+  flex: 0 0 auto;
+  width: auto;
+
+  img {
+    display: block;
+    width: 54px;
+    height: 54px;
+    max-width: none;
+    padding: 0;
+    object-fit: cover;
+    border: 2px solid var(--surface);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px var(--line-strong);
+
+    @include breakpoint($large) {
+      width: 148px;
+      height: 148px;
+      margin: 32px auto 0;
+      border: 5px solid var(--surface);
+      box-shadow: 0 0 0 1px rgba(12, 35, 64, 0.08), 0 14px 28px -14px rgba(8, 23, 45, 0.55);
+    }
+
+    @include breakpoint($x-large) {
+      width: 164px;
+      height: 164px;
+    }
+  }
+}
+
+.sidebar .author__content {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0 12px 0 14px;
+
+  @include breakpoint($large) {
+    padding: 0;
+  }
+}
+
+.sidebar .author__name {
+  margin: 0;
+  color: var(--title);
+  font-family: $display;
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+
+  @include breakpoint($large) {
+    margin: 16px 0 6px;
+    font-size: 1.06rem;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 1.2rem;
+  }
+}
+
+.sidebar .author__bio {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+
+  @include breakpoint($large) {
+    margin: 0 0 16px;
+    font-size: 0.84rem;
+  }
+}
+
+.sidebar .author__urls-wrapper {
+  flex: 0 0 auto;
+  margin-left: auto;
+
+  button {
+    padding: 0.42rem 0.95rem;
+    color: var(--link) !important;
+    font-family: $sans-serif;
+    font-size: 0.76rem;
+    font-weight: 600;
+    background: var(--chip-bg);
+    border: 1px solid var(--chip-line) !important;
+    border-radius: 999px;
+
+    &:hover,
+    &.open {
+      color: var(--fill-fg) !important;
+      background: var(--fill-bg);
+      border-color: var(--fill-line) !important;
+    }
+  }
+}
+
+/* links list: a popover on phones, a plain list inside the card on desktop */
+.sidebar .author__urls {
+  color: var(--ink-2);
+  background: var(--surface);
+  border-color: var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow-hover);
+
+  &:before { border-color: var(--line) transparent; }
+  &:after { border-color: var(--surface) transparent; }
+
+  li {
+    margin: 0;
+    font-size: 0.84rem;
+    line-height: 1.4;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 7px 10px;
+    color: inherit;
+    font-size: 0.84rem;
+    border-radius: 8px;
+
+    &:hover {
+      color: var(--title);
+      text-decoration: none;
+      background: var(--chip-bg);
+    }
+  }
+
+  li i {
+    width: 1.35em;
+    margin-right: 0.6em;
+    padding: 0;
+    color: var(--date);
+    text-align: center;
+  }
+
+  @include breakpoint($large) {
+    padding-top: 10px;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line-soft);
+    border-radius: 0;
+    box-shadow: none;
+
+    li { font-size: 0.88rem; }
+
+    li.author__desktop {
+      display: flex;
+      align-items: center;
+      padding: 7px 0 7px;
+      color: var(--muted);
+    }
+
+    a {
+      margin: 0 -10px;
+      padding: 7px 10px;
+      font-size: 0.88rem;
+    }
+  }
 }
 
 
-$scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
-    margin-top: -$scroll_offset;
+/* ==========================================================================
+   Content: section titles with a navy rule
+   ========================================================================== */
+
+.page__content {
+  color: var(--ink);
+  line-height: 1.68;
+
+  > h1,
+  .section-head {
+    position: relative;
+    margin: 4.2rem 0 1.4rem;
+    margin-top: calc(4.2rem - #{$jump-gap});
+    padding-top: calc(1.25rem + #{$jump-gap});
+    scroll-margin-top: 84px;
+
+    /* hairline */
+    &:before {
+      content: "";
+      position: absolute;
+      top: $jump-gap;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background: var(--line);
+    }
+
+    /* navy segment */
+    &:after {
+      content: "";
+      position: absolute;
+      top: $jump-gap - 1px;
+      left: 0;
+      width: 56px;
+      height: 3px;
+      border-radius: 0 0 2px 2px;
+      background: var(--rule);
+    }
+  }
+
+  > h1:first-child { margin-top: -$jump-gap; }
+
+  > h1,
+  .section-head h1 {
+    color: var(--title);
+    font-family: $display;
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+
+    @include breakpoint($medium) { font-size: 1.75rem; }
+  }
+
+  .section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+  }
+
+  p {
+    margin: 0 0 1.2em;
+    text-wrap: pretty;
+  }
+
+  h3 { color: var(--title); }
+
+  a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: var(--link-line);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      color: var(--title);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+    }
+  }
 }
 
+/* About: the first paragraph reads as a lead */
+#about-me + p {
+  margin-bottom: 1.1em;
+  color: var(--title);
+  font-size: 1.06rem;
+  line-height: 1.6;
+  letter-spacing: -0.006em;
+
+  @include breakpoint($medium) { font-size: 1.1rem; }
+}
+
+
+
+/* ==========================================================================
+   Research areas: a compact numbered list; method names link to papers
+   ========================================================================== */
+
+/* the paragraphs that introduce each list */
+#about-me + p + p,
+.areas + p { color: var(--ink-2); }
+
+#about-me ~ p strong {
+  color: var(--title);
+  font-weight: 650;
+}
+
+.areas {
+  margin: 1rem 0 1.5rem;
+  counter-reset: area;
+
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--line);
+  }
+
+  > ul > li {
+    position: relative;
+    margin: 0;
+    padding: 0.6rem 0 0.6rem 2.5rem;
+    color: var(--ink-2);
+    font-size: 0.95rem;
+    line-height: 1.62;
+    border-bottom: 1px solid var(--line);
+    counter-increment: area;
+
+    /* 01 / 02 / 03 in the left gutter, on the first line */
+    &:before {
+      content: counter(area, decimal-leading-zero);
+      position: absolute;
+      top: 0.6rem;
+      left: 0;
+      color: var(--date);
+      font-family: $monospace;
+      font-size: 0.7rem;
+      font-weight: 500;
+      line-height: 1.62 * 0.95rem;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  > ul > li > strong:first-child {
+    margin-right: 0.1em;
+    color: var(--title);
+    font-family: $display;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+
+  /* method names (never split one across lines, e.g. Drift-Bench++) */
+  a {
+    color: var(--link);
+    font-weight: 550;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.2em;
+    }
+  }
+}
+
+/* the second list (current focus) uses a small diamond instead of a number */
+.areas--focus > ul > li:before {
+  content: "";
+  top: 0.6rem + 0.95rem * 1.62 / 2 - 0.2rem;
+  left: 0.3rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--rule);
+  transform: rotate(45deg);
+}
+
+
+/* ==========================================================================
+   News: log-style list with a date column
+   ========================================================================== */
+
+#news-toggle {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  padding: 0.42rem 0.95rem;
+  color: var(--link);
+  font-family: $sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.4;
+  background: var(--surface);
+  border: 1px solid var(--chip-line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 0.55rem;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    color: var(--fill-fg);
+    background: var(--fill-bg);
+    border-color: var(--fill-line);
+  }
+}
+
+.page__content:has(#news-hidden[style*="block"]) #news-toggle:after {
+  transform: translateY(1px) rotate(-135deg);
+}
+
+#news-hidden { display: none; }
+
+.news {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    margin: 0;
+    padding: 0.7rem 0;
+    color: var(--ink);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    border-bottom: 1px solid var(--line-soft);
+
+    @include breakpoint($medium) { padding: 0.62rem 0 0.62rem 6.2rem; }
+  }
+
+  li > strong:first-child {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: var(--date);
+    font-family: $monospace;
+    font-size: 0.74rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+
+    @include breakpoint($medium) {
+      position: absolute;
+      top: 0.62rem;
+      left: 0;
+      margin: 0;
+      line-height: 1.55rem;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Publications: one card per paper; figure on a tinted plate, venue tab
+   ========================================================================== */
+
+#selected-publications + p {
+  margin-bottom: 1.4rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
 
 .paper-box {
-    display: flex;
-    justify-content: left;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.95rem;
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.75rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow-xs);
+  transition: border-color 0.2s ease, box-shadow 0.25s ease, transform 0.25s ease;
+
+  @include breakpoint($medium) {
+    grid-template-columns: 19rem 1fr;
+    gap: 1.6rem;
     align-items: center;
-    flex-direction: row;
+    padding: 0.85rem 1.5rem 0.85rem 0.85rem;
+  }
+
+  &:hover {
+    border-color: var(--line-strong);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  &:focus-within {
+    border-color: var(--focus);
+    box-shadow: 0 0 0 3px var(--focus-ring);
+  }
+}
+
+.paper-box-image {
+  position: relative;
+  aspect-ratio: unquote("16 / 9");
+  overflow: hidden;
+  background: var(--plate);
+  border-radius: 10px;
+  box-shadow: var(--plate-shadow);   // a sheet of paper lifted off the card
+
+  /* the top gutter keeps the venue tab off the figure */
+  img {
+    position: absolute;
+    top: 30px;
+    left: 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 42px);
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0.32rem 0.62rem 0.3rem;
+  color: var(--venue-fg);
+  font-family: $monospace;
+  font-size: 0.64rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: var(--venue-bg);
+  border-radius: 0 0 8px 0;
+  box-shadow: inset 0 0 0 1px var(--venue-ring);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.badge:empty { display: none; }
+
+.paper-box-text {
+  padding: 0 0.25rem;
+
+  @include breakpoint($medium) { padding: 0; }
+
+  > a,
+  > a:hover {
+    display: block;
+    color: var(--title);
+    font-family: $display;
+    font-size: 1.08rem;
+    font-weight: 650;
+    line-height: 1.34;
+    letter-spacing: -0.012em;
+    text-decoration: none;
+  }
+
+  /* the whole card opens the paper ... */
+  > a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 16px;
+  }
+
+  /* ... but the author list sits above that layer, so it can be selected and copied */
+  p {
+    position: relative;
+    z-index: 2;
+    margin: 0.6rem 0 0;
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
+  strong {
+    color: var(--title);
+    font-weight: 650;
+  }
+}
+
+.paper-box:hover .paper-box-text > a { color: var(--date); }
+
+
+/* ==========================================================================
+   Work experience: logo tile + company + roles
+   ========================================================================== */
+
+.logo-box {
+  display: grid;
+  grid-template-columns: 5.6rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+
+  @include breakpoint($medium) {
+    grid-template-columns: 7.2rem 1fr;
+    gap: 1.5rem;
+  }
+
+  > img {
+    display: block;
+    width: 100%;
+    height: 3.3rem;
+    padding: 0.6rem 0.85rem;
+    object-fit: contain;
+    background: var(--tile);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow-xs);
+
+    @include breakpoint($medium) { height: 3.9rem; }
+  }
+}
+
+.logo-box-text {
+  min-width: 0;
+
+  > p {
+    display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
+    align-items: baseline;
+    gap: 0.1rem 0.75rem;
+    margin: 0.15rem 0 0.4rem;
+  }
 
-    .paper-box-image{
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        order: 2;
-        img {
-            max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
-        }
-    }
-    
-    .paper-box-text{
-        max-width: 100%;
-        order: 1;
-        font-size: 0.50rem;
-    }
-    
-    @include breakpoint($medium) {
-        .paper-box-image{
-            justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
-            order: 1;
-        }
-        
-        .paper-box-text{
-            justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
-            order: 2;
-        }
+  > p strong {
+    color: var(--title);
+    font-family: $display;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.012em;
+  }
 
-    }
+  > p i {
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-style: normal;
+  }
 
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.1rem 1rem;
+    margin: 0;
+    padding: 0.18rem 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  li strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  li em {
+    color: var(--muted);
+    font-family: $monospace;
+    font-size: 0.72rem;
+    font-style: normal;
+    white-space: nowrap;
+  }
 }
 
 
+/* ==========================================================================
+   Dated lists (education, talks), key-value lists (services, contact)
+   ========================================================================== */
 
-.badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.dated,
+.kv {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--line);
+  }
+
+  li {
+    position: relative;
+    margin: 0;
+    padding: 0.8rem 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    border-bottom: 1px solid var(--line);
+  }
+
+  strong {
+    color: var(--title);
+    font-weight: 650;
+  }
+}
+
+.dated {
+  li {
+    @include breakpoint($medium) { padding-left: 8.7rem; }   // same text column as Work Experience
+  }
+
+  li > i:first-child {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: var(--date);
+    font-family: $monospace;
+    font-size: 0.74rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4;
+
+    @include breakpoint($medium) {
+      position: absolute;
+      top: 0.8rem;
+      left: 0;
+      margin: 0;
+      line-height: 1.55rem;
+    }
+  }
+
+  strong { margin-right: 0.3em; }
+}
+
+.edu strong {
+  font-family: $display;
+  font-weight: 700;
+}
+
+.talks { color: var(--ink-2); }
+
+/* label column the same width as the research areas; values can hold links or any inline markup */
+.kv li {
+  @include breakpoint($medium) { padding-left: 17rem; }
+}
+
+.kv li > strong:first-child {
+  display: block;
+
+  @include breakpoint($medium) {
     position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: #00369f;
-    font-size: .8em;
+    top: 0.8rem;
+    left: 0;
+    width: 15.5rem;
+  }
+}
+
+.kv + p {
+  margin-top: 1.3rem;
+  color: var(--ink-2);
+}
+
+
+/* ==========================================================================
+   Mentorship: rows with a right-aligned date
+   ========================================================================== */
+
+.people {
+  h3 {
+    margin: 1.7rem 0 0.6rem;
+    color: var(--date);
+    font-family: $sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--line);
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.1rem 0.6rem;
+    margin: 0;
+    padding: 0.62rem 0;
+    color: var(--ink-2);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  li strong {
+    color: var(--title);
+    font-family: $display;
+    font-size: 0.98rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+
+    @media (max-width: 767px) { flex-basis: 100%; }
+  }
+
+  li strong a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--date);
+      text-decoration: none;
+    }
+  }
+
+  /* dates */
+  li i {
+    margin-left: auto;
+    padding-left: 1rem;
+    color: var(--muted);
+    font-family: $monospace;
+    font-size: 0.72rem;
+    font-style: normal;
+    white-space: nowrap;
+
+    @media (max-width: 767px) {
+      flex-basis: 100%;
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Footer: navy bookend with the same blueprint texture as the cover band
+   ========================================================================== */
+
+.page__footer {
+  margin-top: 4em;
+  color: rgba(255, 255, 255, 0.62);
+  background-color: $navy-950;
+  background-image:
+    radial-gradient(70% 140% at 100% 0%, rgba(141, 184, 255, 0.14) 0%, rgba(141, 184, 255, 0) 55%),
+    linear-gradient(160deg, #10305a 0%, $navy-900 45%, $navy-950 100%);
+  border-top: 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 22px 22px;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 85%);
+            mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 85%);
+    pointer-events: none;
+  }
+
+  footer {
+    position: relative;
+    max-width: $site-max;
+    padding: 0 20px 2.4em;
+
+    @include breakpoint($x-large) { max-width: $site-max; }
+    @media screen and (min-width: 1024px) { padding: 0 32px 2.4em; }
+  }
+
+  a { color: rgba(255, 255, 255, 0.82); }
+
+  .fas,
+  .fab,
+  .far,
+  .fal,
+  .social-icons i { color: rgba(255, 255, 255, 0.62); }
+}
+
+.page__footer footer > a {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.page__footer-follow li { font-size: 0.68rem; letter-spacing: 0.06em; }
+
+
+/* ==========================================================================
+   Motion preferences
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .paper-box,
+  #news-toggle,
+  #news-toggle:after { transition: none; }
+
+  .paper-box:hover { transform: none; }
 }
