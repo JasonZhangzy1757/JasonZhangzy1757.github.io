@@ -139,8 +139,7 @@ Alignment</a>
 <div class="paper-box">
   <div class="paper-box-image"><div class="badge">Arxiv 26 Apr.</div><img src="images/evolverouter.png" alt="evolverouter"></div>
   <div class="paper-box-text">
-    <a href="https://arxiv.org/pdf/2604.05149">EvolveRouter: Co-Evolving Routing and Prompt for Multi-
-Agent Question Answering</a>
+    <a href="https://arxiv.org/pdf/2604.05149">EvolveRouter: Co-Evolving Routing and Prompt for Multi-Agent Question Answering</a>
     <p>Jiatan Huang*, <strong>Zheyuan Zhang</strong>*, Kaiwen Shi, Yanfang Ye, Chuxu Zhang</p>
   </div>
 </div>
@@ -165,7 +164,7 @@ Agent Question Answering</a>
   <div class="paper-box-image"><div class="badge">EACL'26 Main</div><img src="images/ngrouter.png" alt="ngrouter"></div>
   <div class="paper-box-text">
     <a href="https://arxiv.org/abs/2510.09854">NG-Router: Graph-Supervised Multi-Agent Collaboration for Nutrition Question Answering</a>
-    <p>Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Zhengqing Yuan, Keerthiram Murugesan, Vincent Galass, Chuxu Zhang, Yanfang Ye</p>
+    <p>Kaiwen Shi*, <strong>Zheyuan Zhang</strong>*, Zhengqing Yuan, Keerthiram Murugesan, Vincent Galassi, Chuxu Zhang, Yanfang Ye</p>
   </div>
 </div>
 
