@@ -225,16 +225,29 @@ html[data-bg="mist"] {
   /* the theme's sample pages (sitemap, markdown guide, posts) */
   html[data-bg="midnight"] {
     code,
-    pre,
     kbd {
       color: var(--ink);
       background: rgba(141, 184, 255, 0.08);
       border-color: var(--line);
     }
 
+    /* code blocks keep a light "paper" box so the syntax colors stay readable */
+    pre,
+    .highlight,
+    .highlighter-rouge .highlight {
+      color: #{$ink};
+      background: #eef0f3;
+    }
+
+    pre code {
+      color: inherit;
+      background: none;
+    }
+
     th,
     td { border-color: var(--line); }
 
+    thead,
     th { background: rgba(141, 184, 255, 0.06); }
 
     .notice,
@@ -360,11 +373,14 @@ button:focus-visible {
   pointer-events: none;
 }
 
-#main,
-.page__footer {
+#main {
   position: relative;
   z-index: 1;
 }
+
+/* the theme keeps the footer absolutely positioned at the page bottom (its script reserves
+   the space below the content); only lift it above the canvas */
+.page__footer { z-index: 1; }
 
 
 /* ==========================================================================
@@ -390,7 +406,11 @@ button:focus-visible {
   @media screen and (min-width: 1024px) { padding: 0 32px; }
 }
 
+/* The menu button and dropdown are positioned against .masthead__menu (not the nav), so on
+   phones they stop just before the theme switch. The nav keeps the theme's 250px minimum
+   width: below that the greedy-nav script would recurse forever looking for room. */
 .masthead__menu {
+  position: relative;
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -415,7 +435,7 @@ button:focus-visible {
 }
 
 .greedy-nav {
-  min-width: 0;   // lets the nav shrink on 320px phones so the menu button stops before the theme switch
+  position: static;
   background: transparent;
 
   a {
@@ -513,6 +533,8 @@ button:focus-visible {
 
 /* light / dark switch at the right end of the masthead */
 .theme-toggle {
+  position: relative;
+  z-index: 1;   // stays tappable even when the nav's 250px box runs under it on tiny screens
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
@@ -653,6 +675,16 @@ html.no-js .theme-toggle { display: none; }
   .page,
   .archive {
     width: calc(100% - #{$side-w-lg + $side-gap});
+  }
+}
+
+/* short laptop windows: the card would not fit below the masthead, so let it scroll away
+   with the page instead of getting its own scrollbar */
+@media screen and (min-width: 1024px) and (max-height: 720px) {
+  .sidebar {
+    position: relative;
+    top: 0;
+    max-height: none;
   }
 }
 
@@ -946,6 +978,7 @@ html.no-js .theme-toggle { display: none; }
       margin: 0;
       padding: 0;
       border: 0;
+      scroll-margin-top: 84px + 40px;   // a shared /#news link lands below the masthead too
     }
   }
 
@@ -972,14 +1005,10 @@ html.no-js .theme-toggle { display: none; }
 }
 
 /* About: the first paragraph reads as a lead */
+/* About: the first paragraph keeps the body size, just a little brighter */
 #about-me + p {
   margin-bottom: 1.1em;
   color: var(--title);
-  font-size: 1.06rem;
-  line-height: 1.6;
-  letter-spacing: -0.006em;
-
-  @include breakpoint($medium) { font-size: 1.1rem; }
 }
 
 
@@ -1183,6 +1212,12 @@ html.no-js .theme-toggle { display: none; }
     padding: 0.85rem 1.5rem 0.85rem 0.85rem;
   }
 
+  /* sidebar beside a still-narrow content column: give the text more room */
+  @media (min-width: 925px) and (max-width: 1100px) {
+    grid-template-columns: 14rem 1fr;
+    gap: 1.25rem;
+  }
+
   &:hover {
     border-color: var(--line-strong);
     box-shadow: var(--shadow-hover);
@@ -1372,6 +1407,12 @@ html.no-js .theme-toggle { display: none; }
     font-style: normal;
     white-space: nowrap;
   }
+}
+
+
+/* very narrow screens (folded phones): let the role dates wrap instead of overflowing */
+@media (max-width: 299px) {
+  .logo-box-text li em { white-space: normal; }
 }
 
 
@@ -1589,6 +1630,16 @@ html.no-js .theme-toggle { display: none; }
 }
 
 .page__footer-follow li { font-size: 0.68rem; letter-spacing: 0.06em; }
+
+
+/* ==========================================================================
+   The theme's sample pages (sitemap, posts): readable meta text in both themes
+   ========================================================================== */
+
+.page__meta,
+.archive__subtitle,
+.page__taxonomy,
+.pagination--pager { color: var(--muted); }
 
 
 /* ==========================================================================

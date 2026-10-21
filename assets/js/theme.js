@@ -52,8 +52,45 @@
     else setTimeout(fn, 200);
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initToggle);
-  else initToggle();
+  /* Phones: the theme opens the masthead menu and the Follow popover from their buttons but
+     only closes them from the same buttons. Also close them after a menu link is tapped,
+     on a tap anywhere else, and on Escape (by clicking their own buttons, so the theme's
+     state stays in sync). */
+  function initMenuClose() {
+    var nav = document.getElementById('site-nav');
+    var navBtn = nav && nav.querySelector('button');
+    var navLinks = nav && nav.querySelector('.hidden-links');
+    var followBtn = document.querySelector('.author__urls-wrapper > button');
+
+    function menuOpen() { return navLinks && !navLinks.classList.contains('hidden'); }
+    function followOpen() { return followBtn && followBtn.classList.contains('open'); }
+
+    function closeAll(except) {
+      if (except !== 'menu' && menuOpen() && navBtn) navBtn.click();
+      if (except !== 'follow' && followOpen()) followBtn.click();
+    }
+
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      if (!t.closest) return;
+      if (t.closest('.hidden-links a')) { if (menuOpen() && navBtn) navBtn.click(); return; }
+      if (nav && nav.contains(t)) return closeAll('menu');
+      if (t.closest('.author__urls-wrapper')) return closeAll('follow');
+      closeAll();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeAll();
+    });
+  }
+
+  function init() {
+    initToggle();
+    initMenuClose();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
 
   if (document.readyState === 'complete') whenIdle(startFx);
   else window.addEventListener('load', function () { whenIdle(startFx); });

@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Zheyuan Zhang"
 title_separator          : "-"
 name                     : &name "Zheyuan Zhang"
-description              : &description "personal description"
+description              : &description "Welcome to my personal page! I am Zheyuan (Jason) Zhang, a Ph.D. candidate at the University of Notre Dame working on LLM agent optimization."
 url                      : https://JasonZhangzy1757.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "JasonZhangzy1757/JasonZhangzy1757.github.io"
@@ -125,7 +125,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "og-card.jpg" # Open Graph/Twitter default site image (in /images/)
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

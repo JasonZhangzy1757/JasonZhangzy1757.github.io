@@ -9,7 +9,7 @@ redirect_from:
 
 <h1 id="about-me">About Me</h1>
 
-My name is Zheyuan (Jason) Zhang, a third-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
+My name is Zheyuan (Jason) Zhang, a fourth-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
 
 My research focuses on **LLM agent optimization**, with the goal of building adaptive agents that learn from experience and interaction to perform reliably in complex, evolving real-life environments. Specifically, my work spans three areas:
 
@@ -18,7 +18,7 @@ My research focuses on **LLM agent optimization**, with the goal of building ada
 
 * **Knowledge-Augmented Reasoning:** GraphRAG ([Diet-ODIN](https://arxiv.org/abs/2403.08820), [MOPI-HFRS](https://arxiv.org/abs/2412.08847), [NGQA](https://arxiv.org/abs/2412.15547)).
 * **Agent Harness Optimization:** Instruction Optimization ([MAPRO](https://arxiv.org/abs/2510.07475), [EvolveRouter](https://arxiv.org/abs/2604.05149)); Task-Aware Routing ([AgentRouter](https://arxiv.org/abs/2510.05445), [NG-Router](https://arxiv.org/abs/2510.09854), [EvolveRouter](https://arxiv.org/abs/2604.05149)).
-* **Agent Policy Optimization:** Data-Centric Reinforcement Learning ([GCPO](https://arxiv.org/abs/2605.21801), [RAIL](https://arxiv.org/abs/2608.05080)); Agentic RL with Simulated Users ([CLEAT](https://arxiv.org/abs/2610.12655), [StaGPO](https://arxiv.org/abs/2610.24294)).
+* **Agent Policy Optimization:** Data-Centric Reinforcement Learning ([GCPO](https://openreview.net/pdf?id=PetbEgY8Bs), [RAIL](https://arxiv.org/abs/2608.05080)); Agentic RL with Simulated Users ([CLEAT](https://arxiv.org/abs/2610.12655), [StaGPO](https://arxiv.org/abs/2610.24294)).
 
 </div>
 
@@ -26,12 +26,12 @@ I am specifically interested in the topics of **agent uncertainty** and **intera
 
 <div class="areas areas--focus" markdown="1">
 
-* **Uncertainty** ([Survey](https://openreview.net/pdf?id=7NoenVN5Ly)): Quantification ([GCPO](https://arxiv.org/abs/2605.21801)); Calibration ([SAGE](https://arxiv.org/abs/2606.11512), LProp); Utilization ([GCPO](https://arxiv.org/abs/2605.21801), [RAIL](https://arxiv.org/abs/2608.05080)).
+* **Uncertainty** ([Survey](https://openreview.net/pdf?id=7NoenVN5Ly)): Quantification ([GCPO](https://openreview.net/pdf?id=PetbEgY8Bs)); Calibration ([SAGE](https://arxiv.org/abs/2606.11512), LProp); Utilization ([GCPO](https://openreview.net/pdf?id=PetbEgY8Bs), [RAIL](https://arxiv.org/abs/2608.05080)).
 * **Interactive Intent Alignment:** Benchmarking Intent Misalignment and Shifting ([Drift-Bench](https://arxiv.org/abs/2602.02455), [Drift-Bench++](https://arxiv.org/abs/2609.38604)); Interactive Policy Learning ([CLEAT](https://arxiv.org/abs/2610.12655), [StaGPO](https://arxiv.org/abs/2610.24294)).
 
 </div>
 
-For more details, please check my CV [here](http://JasonZhangzy1757.github.io/files/CV.pdf). 
+For more details, please check my CV [here](https://jasonzhangzy1757.github.io/files/CV.pdf). 
 
 
 <!-- News: add new items at the top of the first list, one line each:
@@ -45,17 +45,18 @@ For more details, please check my CV [here](http://JasonZhangzy1757.github.io/fi
 <div class="news">
   <!-- always visible items -->
   <ul>
+    <li><strong>[2026.10]</strong> We have released a new survey on agent uncertainty: <a href="https://openreview.net/pdf?id=7NoenVN5Ly">Uncertainty in LLM Agents: A Comprehensive Survey</a>.</li>
     <li><strong>[2026.04]</strong> Two papers are accepted to ICML 2026.</li>
     <li><strong>[2026.04]</strong> One paper is accepted to ACL 2026. See you in San Diego!</li>
     <li><strong>[2026.03]</strong> I will join ByteDance as Research Scientist Intern this July. See you in Seattle.</li>
     <li><strong>[2026.02]</strong> I will join Amazon as Applied Scientist Intern this April. See you in Seattle.</li>
     <li><strong>[2026.01]</strong> Three papers are accepted to EACL 2026.</li>
-    <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
   </ul>
 
   <!-- extra items (hidden until "Show More" is clicked) -->
   <div id="news-hidden">
     <ul>
+      <li><strong>[2025.10]</strong> We have released <a href="https://arxiv.org/pdf/2509.19580">LLMs4ALL</a>, an extensive survey on LLMs for research and applications in academic disciplines.</li>
       <li><strong>[2025.09]</strong> I will continue my intern at Amazon this Autumn.</li>
       <li><strong>[2025.09]</strong> Two papers are accepted to NeurIPS.</li>
       <li><strong>[2025.05]</strong> Two papers are accepted to ACL.</li>
@@ -103,16 +104,31 @@ You can find the full list of my articles on my [Google Scholar](https://scholar
 
 <!-- One block per paper: badge = venue, then image, title link, authors -->
 <div class="paper-box">
+  <div class="paper-box-image"><div class="badge">Arxiv 26 Sept.</div><img src="images/driftbenchpp.png" alt="driftbenchpp"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2609.38604">Beyond Oracle Communication: Benchmarking Interactive Intent Alignment Under Miscommunication and Evolving User Intent</a>
+    <p><strong>Zheyuan Zhang</strong>, Mengyuan Chao, Ke Xiao, Ziyi Chen, Daoan Zhang, Yan Zhang, Yanfang Ye, Wei Xu</p>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image"><div class="badge">Arxiv 26 Aug.</div><img src="images/rail.png" alt="rail"></div>
+  <div class="paper-box-text">
+    <a href="https://arxiv.org/abs/2608.05080">Optimizing What Policies Learn From: Recoverability-aware Rollout Intervention Learning</a>
+    <p><strong>Zheyuan Zhang</strong>, Manqing Mao, Hong Wang, Zhuoer Wang, Samson Koelle, Jie Yuan, Yanjun Lin, James Feng, Nikki Lijing Kuang, Yanfang Ye, Wei Niu</p>
+  </div>
+</div>
+
+<div class="paper-box">
   <div class="paper-box-image"><div class="badge">Arxiv 26 Jun.</div><img src="images/GCPO.png" alt="gcpo"></div>
   <div class="paper-box-text">
-    <a href="https://arxiv.org/abs/2605.21801">Why Semantic Entropy Fails: Geometry-Aware and
-Calibrated Uncertainty for Policy Optimization</a>
+    <a href="https://openreview.net/pdf?id=PetbEgY8Bs">Regulating What Policies Learn From: Geometry-aware Calibrated Policy Optimization</a>
     <p><strong>Zheyuan Zhang</strong>, Kaiwen Shi, Han Bao, Zehong Wang, Tianyi Ma, Yanfang Ye</p>
   </div>
 </div>
 
 <div class="paper-box">
-  <div class="paper-box-image"><div class="badge">Arxiv 26 Jun.</div><img src="images/sage.png" alt="sage"></div>
+  <div class="paper-box-image"><div class="badge">EMNLP'26 Findings</div><img src="images/sage.png" alt="sage"></div>
   <div class="paper-box-text">
     <a href="https://arxiv.org/abs/2606.11512">SAGE: Answer-Conditioned Uncertainty Targets for Verbal Uncertainty
 Alignment</a>
