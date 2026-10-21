@@ -11,7 +11,7 @@ redirect_from:
 
 My name is Zheyuan (Jason) Zhang, a fourth-year Ph.D. Candidate in the Department of Computer Science and Engineering at the University of Notre Dame, advised by [Prof. Yanfang (Fanny) Ye](http://yes-lab.org/). 
 
-My research focuses on **LLM agent optimization**, with the goal of building adaptive agents that learn from experience and interaction to perform reliably in complex, evolving real-life environments. Specifically, my work spans three areas:
+My research focuses on **LLM Agent Optimization**, with the goal of building adaptive agents that learn from experience and interaction to perform reliably in complex, evolving real-life environments. Specifically, my work spans three areas:
 
 <!-- Research areas: one line per area. Method names link to their papers: [Name](link) -->
 <div class="areas" markdown="1">
@@ -22,7 +22,7 @@ My research focuses on **LLM agent optimization**, with the goal of building ada
 
 </div>
 
-I am specifically interested in the topics of **agent uncertainty** and **interactive intent alignment**: when agents face real users’ incomplete or misleading requests and evolving goals in long-horizon agentic tasks, how can we enable them to recognize their own uncertainty, understand the limits of their capabilities, and remain aligned with users through effective and efficient interaction, such as seeking clarification? Specifically, my work covers:
+I am specifically interested in the topics of **Agent Uncertainty** and **Interactive Intent Alignment**: when agents face real users’ incomplete or misleading requests and evolving goals in long-horizon agentic tasks, how can we enable them to recognize their own uncertainty, understand the limits of their capabilities, and remain aligned with users through effective and efficient interaction, such as seeking clarification? Specifically, my work covers:
 
 <div class="areas areas--focus" markdown="1">
 
